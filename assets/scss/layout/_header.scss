@@ -1,5 +1,5 @@
 .header {
-	height: 94vh;
+	height: calc(100vh - 80px);
 	min-height: 650px;
 	border-bottom: 1px solid $border-color;
 

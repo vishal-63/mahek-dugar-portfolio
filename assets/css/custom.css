@@ -1,0 +1,58 @@
+#about .muted-title {
+  font-size: 3em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6c757d69;
+  position: absolute;
+  top: -2%;
+  right: 0;
+}
+
+section#carousel .carousel .carousel-indicators {
+  bottom: 0;
+}
+
+section#carousel {
+  height: 600px;
+  padding: 0;
+}
+
+.custom-card a {
+  color: #495057;
+  text-decoration: none;
+}
+
+.custom-card a:hover {
+  color: #fff;
+}
+
+.custom-card .text-muted {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.carousel-image {
+  border-radius: 15px;
+  object-fit: contain;
+}
+
+section#carousel .carousel-inner:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 65%;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.6) 100%)
+    repeat 0 0;
+  z-index: 1;
+}
+
+.carousel-caption h5 {
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}

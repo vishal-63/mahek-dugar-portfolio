@@ -530,7 +530,7 @@ mark,
   background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
-  max-width: 100%;
+  max-width: 350px;
   height: auto;
 }
 
@@ -4886,6 +4886,12 @@ input[type="button"].btn-block {
   white-space: nowrap;
 }
 
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
@@ -7391,7 +7397,7 @@ a.close.disabled {
   margin-left: 3px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: var(--blue);
   background-clip: padding-box;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -11573,7 +11579,7 @@ pre {
 }
 
 .custom-card .card-body {
-  padding: 55px 0;
+  padding: 2.5rem 0;
 }
 
 .custom-card .card-body i {
@@ -11620,7 +11626,7 @@ pre {
   bottom: -60px;
 }
 
-.carousel .carousel-indicators li {
+/* .carousel .carousel-indicators li {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -11630,7 +11636,7 @@ pre {
 
 .carousel .carousel-indicators li.active {
   box-shadow: 0 0 5px rgba(108, 117, 125, 0.3);
-}
+} */
 
 .contact {
   position: relative;
@@ -11861,9 +11867,7 @@ pre {
 }
 
 .header {
-  height: 94vh;
-  min-height: 650px;
-  border-bottom: 1px solid #dee2e6;
+  padding-top: 80px;
 }
 
 .header .container {
@@ -11876,27 +11880,26 @@ pre {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.header .container .infos {
-  margin-top: 120px;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .header .container .infos .subtitle {
   margin-bottom: 0;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
 }
 
 .header .container .infos .title {
   margin-bottom: 0px;
-  font-size: 74px;
-  font-weight: bold;
+  font-size: 60px;
+  font-weight: 500;
 }
 
 .header .container .infos p {
-  margin-top: -5px;
-  font-size: 22px;
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.15;
 }
 
 .header .container .infos .btn {
@@ -11946,6 +11949,15 @@ pre {
   }
   .header .container .img-holder {
     display: none;
+  }
+
+  .header .container .infos .title {
+    font-size: 44px;
+  }
+
+  .header .container .infos p {
+    font-size: 16px;
+    line-height: 1.15;
   }
 }
 
@@ -12052,4 +12064,10 @@ pre {
 
 .section.bg-gray {
   background: white;
+}
+
+@media (max-width: 767.98px) {
+  .section {
+    padding: 3rem 0;
+  }
 }
