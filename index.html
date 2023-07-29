@@ -17,6 +17,13 @@
     <!-- Bootstrap + Steller main styles -->
     <link rel="stylesheet" href="assets/css/steller.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script
       src="https://kit.fontawesome.com/bdb7804654.js"
@@ -31,7 +38,7 @@
       data-offset-top="0"
     >
       <div class="container">
-        <a class="navbar-brand" href="#home">
+        <a class="navbar-brand" href="/">
           <div class="navbar-logo">Mahek Dugar</div>
         </a>
         <button
@@ -54,30 +61,44 @@
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="#archive"
-                id="archive-dropdown"
+                href="#"
+                id="navbarDropdown"
                 role="button"
-                data-bs-toggle="dropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
                 aria-expanded="false"
               >
                 Archive
               </a>
-              <!-- <ul class="dropdown-menu" aria-labelledby="archive-dropdown">
-                <li><a class="dropdown-item" href="#about">About</a></li>
-                <li><a class="dropdown-item" href="#">Co-Curricular</a></li>
-                <li><a class="dropdown-item" href="#">Passion Project</a></li>
-                <li><a class="dropdown-item" href="#">Community Service</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Sports & Adventure</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Special Interests</a></li>
-              </ul> -->
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/co-curricular.html"
+                  >Co-Curricular</a
+                >
+                <a class="dropdown-item" href="/community-service.html"
+                  >Community Service</a
+                >
+                <a class="dropdown-item" href="/passion-project.html"
+                  >Passion Project</a
+                >
+                <a class="dropdown-item" href="/sports-and-adventure.html"
+                  >Sports and Adventure</a
+                >
+                <a class="dropdown-item" href="/special-interests.html"
+                  >Special Interests</a
+                >
+              </div>
             </li>
             <li class="nav-item">
-              <a class="- btn btn-primary rounded ml-4" href="#contact">
+              <a
+                class="nav-link btn btn-primary rounded ml-sm-4"
+                href="#footer"
+              >
                 Contact
               </a>
             </li>
@@ -90,35 +111,49 @@
     <!-- Introduction Header -->
     <header class="header" id="home">
       <div class="container h-auto py-2">
-        <div class="img-holder">
+        <div class="img-holder" data-aos="zoom-in-right">
           <lottie-player
             src="https://assets1.lottiefiles.com/private_files/lf30_omixcbvz.json"
             background="transparent"
             speed="1"
-            style="width: 500px; height: 500px"
+            style="width: 350px; height: 350px"
             loop
             autoplay
           ></lottie-player>
         </div>
-        <div class="infos">
+        <div class="infos" data-aos="zoom-in-left">
           <h6 class="subtitle">Hey, there!</h6>
           <h6 class="title">I'm Mahek Dugar</h6>
           <p>
-            An enthusiastic individual on a quest for knowledge and personal
-            growth. From academics to sports to community projects, I embrace
-            opportunities for growth and self-expression. Aspiring for a career
-            in Business Analytics I look forward to exploring how business
-            functions and technology can co-exist to create a positive
-            contribution in the world of business. Explore this website to get a
-            glimpse of my experiences and endeavours!
+            I'm Mahek Dugar, an enthusiastic individual on a quest for knowledge
+            and personal growth. Aspiring to study Business Analytics I look
+            forward to exploring how business functions and technology can
+            co-exist to create a positive contribution in the world of business.
+            Explore this website to get a glimpse of my experiences and
+            endeavors!
           </p>
         </div>
       </div>
     </header>
     <!-- End of introduction header -->
 
+    <div
+      class="quote-container m-3 m-sm-5 d-flex align-items-center justify-content-center"
+      data-aos="zoom-in"
+    >
+      <p class="quote my-3">
+        "Asking for help is not giving up, it's refusing to do so."
+      </p>
+    </div>
+
     <!-- Page Header -->
-    <section id="carousel" class="section mt-3">
+    <section
+      id="carousel"
+      class="section mt-sm-3"
+      data-aos="zoom-in"
+      data-aos-mirror="true"
+      data-aos-once="false"
+    >
       <div class="container h-100 w-100">
         <div
           id="carousel-indicators"
@@ -136,78 +171,70 @@
             <li data-target="#carousel-indicators" data-slide-to="3"></li>
             <li data-target="#carousel-indicators" data-slide-to="4"></li>
             <li data-target="#carousel-indicators" data-slide-to="5"></li>
+            <li data-target="#carousel-indicators" data-slide-to="6"></li>
+            <li data-target="#carousel-indicators" data-slide-to="7"></li>
+            <li data-target="#carousel-indicators" data-slide-to="8"></li>
+            <li data-target="#carousel-indicators" data-slide-to="9"></li>
           </ol>
           <div class="carousel-inner h-100 w-100">
             <div class="carousel-item h-100 w-100 active">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>
-                  "Asking for help is not giving up, it's refusing to do so."
-                </h5>
-              </div>
               <img
                 class="d-block h-100 w-100 mx-auto carousel-image"
-                src="assets/imgs/content/about/3a. 2019- Regional Level - Long Jump - Bronze.jpeg"
-                alt="Third slide"
+                src="assets/imgs/content/1.jpg"
               />
             </div>
             <div class="carousel-item h-100 w-100">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>
-                  "Asking for help is not giving up, it's refusing to do so."
-                </h5>
-              </div>
               <img
                 class="d-block h-100 w-100 mx-auto carousel-image"
-                src="assets/imgs/content/Sky Diving- South Africa -2018.jpg"
-                alt="Third slide"
+                src="assets/imgs/content/2.jpeg"
               />
             </div>
             <div class="carousel-item h-100 w-100">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>
-                  "Asking for help is not giving up, it's refusing to do so."
-                </h5>
-              </div>
               <img
                 class="d-block h-100 w-100 mx-auto carousel-image"
-                src="assets/imgs/content/about/4b. 2020- Long Jump - Gold.JPG"
-                alt="Third slide"
+                src="assets/imgs/content/3.jpeg"
               />
             </div>
             <div class="carousel-item h-100 w-100">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>
-                  "Asking for help is not giving up, it's refusing to do so."
-                </h5>
-              </div>
               <img
                 class="d-block h-100 w-100 mx-auto carousel-image"
-                src="assets/imgs/content/about/9.jpeg"
-                alt="Third slide"
+                src="assets/imgs/content/4.jpeg"
               />
             </div>
             <div class="carousel-item h-100 w-100">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>
-                  "Asking for help is not giving up, it's refusing to do so."
-                </h5>
-              </div>
               <img
                 class="d-block h-100 w-100 mx-auto carousel-image"
-                src="assets/imgs/content/about/IMG-3374.jpg"
-                alt="Third slide"
+                src="assets/imgs/content/5.JPG"
               />
             </div>
             <div class="carousel-item h-100 w-100">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>
-                  "Asking for help is not giving up, it's refusing to do so."
-                </h5>
-              </div>
               <img
                 class="d-block h-100 w-100 mx-auto carousel-image"
-                src="assets/imgs/content/about/IMG-3598 (1).JPG"
-                alt="Third slide"
+                src="assets/imgs/content/6.JPG"
+              />
+            </div>
+            <div class="carousel-item h-100 w-100">
+              <img
+                class="d-block h-100 w-100 mx-auto carousel-image"
+                src="assets/imgs/content/7.JPG"
+              />
+            </div>
+            <div class="carousel-item h-100 w-100">
+              <img
+                class="d-block h-100 w-100 mx-auto carousel-image"
+                src="assets/imgs/content/8.JPG"
+              />
+            </div>
+            <div class="carousel-item h-100 w-100">
+              <img
+                class="d-block h-100 w-100 mx-auto carousel-image"
+                src="assets/imgs/content/9.jpg"
+              />
+            </div>
+            <div class="carousel-item h-100 w-100">
+              <img
+                class="d-block h-100 w-100 mx-auto carousel-image"
+                src="assets/imgs/content/10.jpeg"
               />
             </div>
           </div>
@@ -237,86 +264,98 @@
     <!-- About section -->
     <section id="about" class="section mt-3">
       <div class="container mt-5 text-center">
-        <h6 class="subtitle">A Journey of Passion, Purpose, and Potential</h6>
         <h6 class="section-title mb-4">Getting to know Me!</h6>
         <div class="pl-md-4">
           <img
             src="assets/imgs/content/about/About Me.jpg"
             alt=""
             class="img-thumbnail mb-2 mr-3 float-left"
+            data-aos="zoom-in-right"
+            data-aos-mirror="true"
+            data-aos-once="false"
           />
-          <div class="position-relative text-left">
-            <h6 class="title">Mahek Dugar</h6>
-            <p class="subtitle">UI/UX Designer</p>
-            <span class="muted-title">About</span>
+          <div
+            data-aos="zoom-in-left"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <div class="position-relative text-left">
+              <h6 class="title">Mahek Dugar</h6>
+              <p class="subtitle">
+                A Journey of Passion, Purpose, and Potential
+              </p>
+              <span class="muted-title about-text">About</span>
+            </div>
+
+            <p class="text-justify">
+              Hi! Welcome to my page. Here is the journey of my experiences that
+              have shaped me into who I am today.
+            </p>
+            <p class="text-justify">
+              Following Steve Jobs' philosophy, I've always been passionate
+              about pursuing my interests rather than conforming to prescribed
+              courses. After having studied ICSE till Grade 10, I moved to the
+              IB curriculum where I could explore and pursue my interests in the
+              disciplines of economics, business, math, and physics. Through
+              Early Steps Academy, I completed a Seven Level Global
+              Certification Programme, which opened my doors to the core
+              concepts of Digital Technology, Entrepreneurship, Personal Finance
+              and Crypto that fueled my ambition to explore these areas further.
+              Furthermore, through a project based approach at a summer camp on
+              Python and AI at IIT Delhi, I took my first step towards
+              understanding analytical, logical and algorithmic thinking which I
+              believe is pertinent to thrive in the tech-driven world of
+              tomorrow.
+            </p>
+            <p class="text-justify">
+              Digital Quest, my passion project, is an initiative to enable
+              digital inclusion to those deprived. Through a series of Charity
+              Badminton Tournaments and E- Waste Drives in the city, I have been
+              able to take some steps in setting up a Computer Center for young
+              children in the village of Nadiad (Gujarat) in collaboration with
+              Tresna Foundation, Ahmedabad. Constant efforts are underway to
+              sustain the functioning of this center to help these children
+              excel their digital skills.
+            </p>
+            <p class="text-justify">
+              Being passionate about working in areas focusing digital literacy,
+              teenage well-being, and body positivity, I was chosen for the
+              Counter Speech Fellowship program of the Young Leaders for Active
+              Citizenship (YLAC) in collaboration with Instagram, where I had
+              the opportunity to contribute meaningfully to these causes along
+              with a likeminded cohort.
+            </p>
+            <p class="text-justify">
+              Leading Project Gyaanshala, I worked with my friends to build and
+              refurbish a school at a site for the children of the construction
+              workers and also helped them build foundations of basic education.
+              This experience instilled in me a deep sense of empathy and the
+              desire to give back to society.
+            </p>
+            <p class="text-justify">
+              Music is my absolute passion, and I've been playing the piano for
+              8 years and have secured Merit positions at the Trinity exams up
+              to Level 5! A sports enthusiast, an avid reader, a dancer and a
+              movie lover - I believe there's nothing like losing yourself in a
+              good book or immersing yourself in a great film.
+            </p>
+            <p class="text-justify">
+              As I look ahead, my aspirations lie in diving deeper into studying
+              business analytics and understanding how technology and data can
+              help me achieve personal, professional, and societal goals. If any
+              of this resonates with you, I'd love to connect and share more
+              about our common interests and passions. Thanks for visiting!
+            </p>
+
+            <button class="btn btn-primary rounded mt-3">DOWNLOAD CV</button>
           </div>
-          <p class="text-justify">
-            Hi! Welcome to my page. Here is the journey of my experiences that
-            have shaped me into who I am today.
-          </p>
-          <p class="text-justify">
-            Following Steve Jobs' philosophy, I've always been passionate about
-            pursuing my interests rather than conforming to prescribed courses.
-            After having studied ICSE till Grade 10, I moved to the IB
-            curriculum where I could explore and pursue my interests in the
-            disciplines of economics, business, math, and physics. I braved
-            myself further by participating in Economics and English Olympiads.
-            Additionally, at Early Steps Academy, I completed a Seven Level
-            Global Certification Programme, which opened my doors to the core
-            concepts of Digital Technology, Entrepreneurship, Personal Finance
-            and Crypto that fueled my ambition to explore these areas further.
-            Furthermore, through a project based approach at a summer camp on
-            Python and AI at IIT Delhi, I took my first step towards
-            understanding analytical, logical and algorithmic thinking which I
-            believe is pertinent to thrive in the tech-driven world of tomorrow.
-          </p>
-          <p class="text-justify">
-            Digital Quest- my passion project, is an initiative to enable
-            digital inclusion where it is deprived. Through a series of Charity
-            Badminton Tournaments and E- Waste Drives in the city, I have been
-            able to take some baby steps in setting up a Computer Center for
-            young children in the village of Nadiad (Gujarat) in collaboration
-            with Tresna Foundation, Ahmedabad. Constant efforts are underway to
-            sustain the functioning of this center to help these children excel
-            their digital skills.
-          </p>
-          <p class="text-justify">
-            Being passionate about working in areas focusing digital literacy,
-            teenage well-being, and body positivity, I was chosen for the
-            Counter Speech Fellowship program of the Young Leaders for Active
-            Citizenship (YLAC) in collaboration with Instagram, where I had the
-            opportunity to contribute meaningfully to these causes along with a
-            likeminded cohort.
-          </p>
-          <p class="text-justify">
-            Leading Project Gyaanshala, I worked with my friends to build and
-            refurbish a school at a site for the children of the construction
-            workers and also helped them build foundations of basic education.
-            This experience instilled in me a deep sense of empathy and the
-            desire to give back to society.
-          </p>
-          <p class="text-justify">
-            Music is my absolute passion, and I've been playing the piano for 8
-            years now. I've been able to secure Merit positions at the
-            prestigious Trinity exams up to Level 5! I'm also an avid reader and
-            movie lover - there's nothing like losing yourself in a good book or
-            immersing yourself in a great film.
-          </p>
-          <p class="text-justify">
-            As I look ahead, my aspirations lie in diving deeper into studying
-            business analytics and understanding how technology and data can
-            help me achieve personal, professional, and societal goals. If any
-            of this resonates with you, I'd love to connect and share more about
-            our common interests and passions. Thanks for visiting!
-          </p>
-          <button class="btn btn-primary rounded mt-3">DOWNLOAD CV</button>
         </div>
       </div>
     </section>
     <!-- End of about section -->
 
     <!-- Archive section -->
-    <section id="archive" class="archive section">
+    <section id="archive" class="archive section pt-0" data-aos="zoom-in">
       <div class="container-fluid text-center">
         <h6 class="section-title mb-4">Archive</h6>
         <div class="row justify-content-center">
@@ -324,9 +363,11 @@
             <div class="custom-card card border">
               <a href="/co-curricular.html">
                 <div class="card-body">
-                  <i class="icon ti-cup"></i>
-                  <h5>Co - Curricular</h5>
-                  <p class="text-muted m-3 px-2">
+                  <div>
+                    <i class="icon ti-cup"></i>
+                    <h5>Co - Curricular</h5>
+                  </div>
+                  <p class="text-muted">
                     Making an Impact Outside the Classroom
                   </p>
                 </div>
@@ -335,11 +376,13 @@
           </div>
           <div class="col-sm-4 col-md-2 mb-4">
             <div class="custom-card card border">
-              <a href="#archive">
-                <div class="card-body">
-                  <i class="icon fas fa-star fa-sm"></i>
-                  <h5>Passion Project</h5>
-                  <p class="text-muted m-3 px-2">Digital Inclusion</p>
+              <a href="/passion-project.html">
+                <div class="card-body px-3">
+                  <div>
+                    <i class="icon fas fa-star fa-sm"></i>
+                    <h5>Passion Project</h5>
+                  </div>
+                  <p class="text-muted">Digital Inclusion</p>
                 </div>
               </a>
             </div>
@@ -347,36 +390,38 @@
           <div class="col-sm-4 col-md-2 mb-4">
             <div class="custom-card card border">
               <a href="/community-service.html">
-                <div class="card-body">
-                  <i class="icon ti-link"></i>
-                  <h5>Community Service</h5>
-                  <p class="text-muted m-3 px-2">
-                    Volunteering and Giving Back
-                  </p>
+                <div class="card-body px-3">
+                  <div>
+                    <i class="icon ti-link"></i>
+                    <h5>Community Service</h5>
+                  </div>
+                  <p class="text-muted">Volunteering and Giving Back</p>
                 </div>
               </a>
             </div>
           </div>
           <div class="col-sm-4 col-md-2 mb-4">
             <div class="custom-card card border">
-              <a href="#archive">
-                <div class="card-body">
-                  <i class="icon ti-basketball"></i>
-                  <h5>Sports and Adventure</h5>
-                  <p class="text-muted m-3 px-2">
-                    Embracing the Athlete Within
-                  </p>
+              <a href="/sports-and-adventure.html">
+                <div class="card-body px-3">
+                  <div>
+                    <i class="icon ti-basketball"></i>
+                    <h5>Sports and Adventure</h5>
+                  </div>
+                  <p class="text-muted">Embracing the Athlete Within</p>
                 </div>
               </a>
             </div>
           </div>
           <div class="col-sm-4 col-md-2 mb-4">
             <div class="custom-card card border">
-              <a href="#archive">
-                <div class="card-body">
-                  <i class="icon ti-wand"></i>
-                  <h5>Special Interests</h5>
-                  <p class="text-muted m-3 px-2">Expressing My Creative Side</p>
+              <a href="/special-interests.html">
+                <div class="card-body px-3">
+                  <div>
+                    <i class="icon ti-wand"></i>
+                    <h5>Special Interests</h5>
+                  </div>
+                  <p class="text-muted">Expressing My Creative Side</p>
                 </div>
               </a>
             </div>
@@ -386,8 +431,8 @@
     </section>
     <!-- End of archive section -->
 
-    <!-- Tesimonails section-->
-    <section class="section mt-3" id="testimonials">
+    <!-- Testimonails section-->
+    <section class="section mt-3 pt-0" id="testimonials" data-aos="zoom-in">
       <div class="container text-center">
         <h6 class="section-title mb-4">Testimonials</h6>
         <!-- Carousel wrapper -->
@@ -408,21 +453,28 @@
             <div class="carousel-item active">
               <img
                 class="rounded-circle shadow-1-strong mb-4"
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                src="assets/imgs/tresna-foundation-logo.png"
                 alt="avatar"
                 style="width: 150px"
               />
               <div class="row d-flex justify-content-center">
                 <div class="col-lg-8">
-                  <h5 class="mb-3">Maria Kate</h5>
-                  <p>Photographer</p>
+                  <h5 class="mb-3">Tresna Foundation</h5>
                   <p class="text-muted">
                     <i class="fas fa-quote-left pe-2"></i>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Minus et deleniti nesciunt sint eligendi reprehenderit
-                    reiciendis, quibusdam illo, beatae quia fugit consequatur
-                    laudantium velit magnam error. Consectetur distinctio fugit
-                    doloremque.
+                    Mahek Dugar, a benevolent patron and avid supporter of
+                    Tresna Foundation. With an unwavering dedication to
+                    community service and a profound commitment to digital
+                    empowerment, Mahek's generous contribution of computer and
+                    peripherals to our esteemed Pahel - Computer Learning Center
+                    of Nadiad has been nothing short of transformative. We, at
+                    Tresna Foundation, are privileged to have Mahek Dugar as a
+                    valued partner in our noble mission. Mahek also displays
+                    remarkable prowess as a badminton player, utilizing her
+                    platform to champion the cause of underprivileged children
+                    by promoting the sport amongst them. Her unwavering
+                    dedication to bridging social disparities through the power
+                    of sport is truly inspiring.
                   </p>
                 </div>
               </div>
@@ -510,7 +562,7 @@
         <div class="row">
           <div class="col-sm-6 col-md-3 mb-4">
             <div class="custom-card card border">
-              <div class="card-body">
+              <div class="card-body px-3">
                 <i class="icon ti-book"></i>
                 <h5>Academic Competitions</h5>
               </div>
@@ -1115,7 +1167,7 @@
     <!-- End od Hire me section. -->
 
     <!-- Contact Section -->
-    <section id="contact" class="position-relative section">
+    <!-- <section id="contact" class="position-relative section">
       <div class="container text-center">
         <h6 class="subtitle">Contact</h6>
         <h6 class="section-title mb-4">Get In Touch With Me</h6>
@@ -1178,20 +1230,20 @@
             </form>
           </div>
           <div class="contact-infos">
-            <!-- <div class="item">
+            <div class="item">
               <i class="ti-location-pin"></i>
               <div class="">
                 <h5>Location</h5>
                 <p>12345 Fake ST NoWhere AB Country</p>
               </div>
             </div> -->
-            <!-- <div class="item">
+    <!-- <div class="item">
               <i class="ti-mobile"></i>
               <div>
                 <h5>Phone Number</h5>
                 <p>(123) 456-7890</p>
               </div>
-            </div> -->
+            </div>
             <div class="item">
               <i class="ti-email"></i>
               <div class="mb-0">
@@ -1205,37 +1257,29 @@
       <div id="map">
         <iframe src="https://snazzymaps.com/embed/61257"></iframe>
       </div>
-    </section>
+    </section> -->
     <!-- End of Contact Section -->
 
     <!-- Page Footer -->
-    <footer class="page-footer">
+    <footer class="page-footer" id="footer">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-sm-6">
+          <div class="col-4 col-sm-6">
             <p>
-              Copyright
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              &copy;
               <a href="#">Mahek Dugar</a>
             </p>
           </div>
-          <div class="col-sm-6">
+          <div class="col-8 col-sm-6">
             <div class="socials">
-              <a class="social-item" href="javascript:void(0)"
-                ><i class="ti-facebook"></i
-              ></a>
-              <a class="social-item" href="javascript:void(0)"
-                ><i class="ti-google"></i
-              ></a>
-              <a class="social-item" href="javascript:void(0)"
-                ><i class="ti-github"></i
-              ></a>
-              <a class="social-item" href="javascript:void(0)"
-                ><i class="ti-twitter"></i
-              ></a>
+              <a
+                href="mailto:mahekdugar@gmail.com"
+                target="_blank"
+                class="d-flex align-items-center"
+                ><div class="social-item">
+                  <i class="ti-email"></i>
+                </div>
+                mahekdugar@gmail.com</a
+              >
             </div>
           </div>
         </div>
@@ -1248,8 +1292,33 @@
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
     <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <!-- Animate on Scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!-- steller js -->
     <script src="assets/js/steller.js"></script>
+
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 80, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 600, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
   </body>
 </html>
