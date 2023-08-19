@@ -28,7 +28,7 @@
       data-offset-top="0"
     >
       <div class="container">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="/">
           <div class="navbar-logo">Mahek Dugar</div>
         </a>
         <button
@@ -46,13 +46,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto align-items-center">
             <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#piano">Piano</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#dancing">Dancing</a>
+              <a class="nav-link" href="#reading">Reading</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#reading">Reading</a>
+              <a class="nav-link" href="#dancing">Dancing</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -84,14 +87,6 @@
                 >
               </div>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link btn btn-primary rounded ml-sm-4"
-                href="#footer"
-              >
-                Contact
-              </a>
-            </li>
           </ul>
         </div>
       </div>
@@ -101,16 +96,15 @@
     <!-- Special Interests -->
     <section id="special-interests" class="section pb-0">
       <div class="container first text-center">
-        <h6 class="subtitle">My Diverse Passions</h6>
-        <h6 class="section-title mb-4">Special Interests</h6>
+        <h6 class="section-title mb-4">My Diverse Passions</h6>
         <p class="mb-4">
           Step into my world of diverse passions, where I find joy and
           fulfillment in pursuing various hobbies that shape my identity.
         </p>
 
         <iframe
-          width="560"
-          height="315"
+          width="700"
+          height="395"
           src="https://www.youtube.com/embed/c8Dhf49yXwA"
           title="YouTube video player"
           frameborder="0"
@@ -125,7 +119,7 @@
     <section id="piano" class="section pb-0">
       <div class="container text-center">
         <h6 class="section-title mb-4">Playing Piano</h6>
-        <div class="row">
+        <div class="row align-items-center">
           <p class="mb-4 col-sm-6 text-left" data-aos="zoom-in-right">
             For the past 8 years, the piano has been my loyal companion, opening
             up a world of melodies and emotions. Achieving Merit positions up to
@@ -137,7 +131,10 @@
           </p>
           <div class="col-sm-6 d-flex" data-aos="zoom-in-left">
             <div class="img-wrapper col-sm-6">
-              <img src="assets/imgs/content/interests/Level 3.jpg" />
+              <img
+                src="assets/imgs/content/interests/Level 3.jpg"
+                class="piano"
+              />
               <div class="overlay">
                 <div class="overlay-infos">
                   <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
@@ -145,7 +142,10 @@
               </div>
             </div>
             <div class="img-wrapper col-sm-6">
-              <img src="assets/imgs/content/interests/Level 5.jpeg" />
+              <img
+                src="assets/imgs/content/interests/Level 5.jpeg"
+                class="piano"
+              />
               <div class="overlay">
                 <div class="overlay-infos">
                   <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
@@ -158,48 +158,14 @@
     </section>
     <!-- End of piano section -->
 
-    <!-- Dancing & Film-making section -->
-    <section id="dancing" class="section pb-0">
-      <div class="container text-center">
-        <h6 class="section-title mb-4">Dancing & Film-Making</h6>
-        <div class="row">
-          <p class="mb-4 col-sm-6 text-left" data-aos="zoom-in-right">
-            <span class="subtitle" style="font-weight: 600">Dancing</span>
-            <br />
-            Dancing has always been my avenue for celebration, self-expression,
-            and pure happiness. Whether it's a carefully choreographed routine
-            or an impromptu dance-off with friends it helps me instill
-            confidence, and freeing my spirit. It's a constant reminder that
-            life is meant to be embraced with grace.
-          </p>
-          <p class="mb-4 col-sm-6 text-left" data-aos="zoom-in-left">
-            <span class="subtitle" style="font-weight: 600"
-              >Movies and Film making</span
-            >
-            <br />
-            Movies are not just a form of entertainment; they are a gateway to
-            imagination. I am drawn to the power of cinema, the way it
-            transports us to different worlds and emotions. From watching dramas
-            to thrillers, each film has left an indelible mark on my creativity.
-            Love for movies made me participate in a 3-day filmmaking workshop
-            where I delved into the art of storytelling and had the opportunity
-            to create a short film titled "Justice in Jeopardy." This immersive
-            experience taught me the importance of collaboration, storytelling,
-            and how the art of filmmaking comes to life on the screen.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- End of Jain vidyas section -->
-
     <!-- Books Section -->
-    <section id="reading" class="section">
+    <section id="reading" class="section pb-0">
       <div class="container text-center">
         <h6 class="section-title mb-4">Reading Books</h6>
         <div class="row">
           <section
             id="carousel"
-            class="section col-sm-6"
+            class="section col-sm-6 carousel"
             data-aos="zoom-in-right"
           >
             <div class="container h-100 w-100">
@@ -286,6 +252,40 @@
     </section>
     <!-- End of books section -->
 
+    <!-- Dancing Section -->
+    <section id="dancing" class="section">
+      <div class="container text-center">
+        <h6 class="section-title mb-4">Dancing & Film-Making</h6>
+        <div class="row">
+          <p class="col-sm-6 text-left" data-aos="zoom-in-right">
+            <span class="subtitle" style="font-weight: 600">Dancing</span>
+            <br />
+            Dancing has always been my avenue for celebration, self-expression,
+            and pure happiness. Whether it's a carefully choreographed routine
+            or an impromptu dance-off with friends it helps me instill
+            confidence, and freeing my spirit. It's a constant reminder that
+            life is meant to be embraced with grace.
+          </p>
+          <p class="col-sm-6 text-left" data-aos="zoom-in-left">
+            <span class="subtitle" style="font-weight: 600"
+              >Movies and Film making</span
+            >
+            <br />
+            Movies are not just a form of entertainment; they are a gateway to
+            imagination. I am drawn to the power of cinema, the way it
+            transports us to different worlds and emotions. From watching dramas
+            to thrillers, each film has left an indelible mark on my creativity.
+            Love for movies made me participate in a 3-day filmmaking workshop
+            where I delved into the art of storytelling and had the opportunity
+            to create a short film titled "Justice in Jeopardy." This immersive
+            experience taught me the importance of collaboration, storytelling,
+            and how the art of filmmaking comes to life on the screen.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End of dancing section -->
+
     <div id="fullpage" onclick="removeImage()">
       <img src="" alt="" />
     </div>
@@ -302,13 +302,25 @@
           <div class="col-8 col-sm-6">
             <div class="socials">
               <a
-                href="mailto:mahekdugar@gmail.com"
+                class="social-item"
+                target="_blank"
+                href="https://www.linkedin.com/in/mahek-dugar-b02904244/"
+                ><i class="ti-linkedin"></i
+              ></a>
+              <a
+                class="social-item"
+                target="_blank"
+                href="https://youtube.com/@Mahek-Dugar"
+                ><i class="ti-youtube"></i
+              ></a>
+              <a
+                href="mailto:mahekdugar21@gmail.com"
                 target="_blank"
                 class="d-flex align-items-center"
                 ><div class="social-item">
                   <i class="ti-email"></i>
                 </div>
-                mahekdugar@gmail.com</a
+                mahekdugar21@gmail.com</a
               >
             </div>
           </div>

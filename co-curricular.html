@@ -28,7 +28,7 @@
       data-offset-top="0"
     >
       <div class="container">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="/">
           <div class="navbar-logo">Mahek Dugar</div>
         </a>
         <button
@@ -46,14 +46,47 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto align-items-center">
             <li class="nav-item">
-              <a class="nav-link" href="#management">Management</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#wharton">Wharton</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="managementDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Business & Management
+              </a>
+              <div class="dropdown-menu" aria-labelledby="managementDropdown">
+                <a class="dropdown-item" href="#esa">Early Steps Academy</a>
+                <a class="dropdown-item" href="#wharton"
+                  >Wharton Investment Competition</a
+                >
+              </div>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#other">Other</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="otherDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Other
+              </a>
+              <div class="dropdown-menu" aria-labelledby="otherDropdown">
+                <a class="dropdown-item" href="#jainism"
+                  >Principles of Jainism</a
+                >
+                <a class="dropdown-item" href="#coding-camps">Coding Camps</a>
+                <a class="dropdown-item" href="#olympiads">Olympiads & MUNs</a>
+                <a class="dropdown-item" href="#projects">Projects</a>
+              </div>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -68,30 +101,22 @@
                 Archive
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="co-curricular.html"
+                <a class="dropdown-item" href="/co-curricular.html"
                   >Co-Curricular</a
                 >
-                <a class="dropdown-item" href="community-service.html"
+                <a class="dropdown-item" href="/community-service.html"
                   >Community Service</a
                 >
-                <a class="dropdown-item" href="passion-project.html"
+                <a class="dropdown-item" href="/passion-project.html"
                   >Passion Project</a
                 >
-                <a class="dropdown-item" href="sports-and-adventure.html"
+                <a class="dropdown-item" href="/sports-and-adventure.html"
                   >Sports and Adventure</a
                 >
-                <a class="dropdown-item" href="special-interests.html"
+                <a class="dropdown-item" href="/special-interests.html"
                   >Special Interests</a
                 >
               </div>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link btn btn-primary rounded ml-sm-4"
-                href="#footer"
-              >
-                Contact
-              </a>
             </li>
           </ul>
         </div>
@@ -101,130 +126,293 @@
 
     <!-- Business & Management Related -->
     <section id="management" class="section pb-0">
-      <div class="container text-center first">
-        <h6 class="section-title mb-4">Business and Management Related</h6>
-        <p class="mb-5 pb-4">
-          During my time at Early Steps Academy from 2021 to 2023, I had the
-          opportunity to explore diverse topics such as Global Awareness,
-          Entrepreneurship, 21st-Century Skills, Technology, Finance, Global
-          History, and Technology Miracles with a global cohort. The engaging
-          pedagogy of analyzing case studies of real life companies like...
-          helped me gain valuable insights into various business and
-          technological advancements and also developed my critical thinking and
-          communication skills.
-          <br />
-          Teaming up with four other talented peers from across the world, I
-          also participated in their Global Crack the Case Competition, securing
-          a position in the top 10 teams with a score of 496/500 from over 5,000
-          teams across 26 countries. Also, winning the Jeff Bezos Global Speech
-          Championship was a proud moment that boosted my confidence. Early
-          Steps Academy connected me with global peers, shaping me into a
-          well-rounded individual prepared for business and management
-          challenges. I am grateful for these opportunities and excited to make
-          a positive impact.
-        </p>
+      <div class="container text-center first position-relative">
+        <h6 class="section-title main-title">Business and Management</h6>
+        <div id="esa" class="section pb-0">
+          <h6 class="title mb-4">Early Steps Academy Global Certification</h6>
+          <div class="row align-items-center">
+            <p
+              class="col-sm-6"
+              data-aos="zoom-in-right"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              During my time at Early Steps Academy from 2021 to 2023, I had the
+              opportunity to explore diverse topics such as Global Awareness,
+              Entrepreneurship, 21st-Century Skills, Finance, Global History,
+              and Technology Miracles with a global cohort. The engaging
+              pedagogy of analyzing case studies of real life companies like
+              KFC, H&M, Netflix, Amazon, 23andMe helped me gain valuable
+              insights into various business and technological advancements and
+              also developed my critical thinking and communication skills.
+            </p>
+            <section
+              id="carousel"
+              class="col-sm-6 carousel"
+              data-aos="zoom-in-left"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              <div class="container h-100 w-100">
+                <div
+                  id="carousel-indicators"
+                  class="carousel slide h-100 w-100"
+                  data-ride="carousel"
+                >
+                  <ol class="carousel-indicators" style="bottom: 0">
+                    <li
+                      data-target="#carousel-indicators"
+                      data-slide-to="0"
+                      class="active"
+                    ></li>
+                    <li
+                      data-target="#carousel-indicators"
+                      data-slide-to="1"
+                    ></li>
+                    <li
+                      data-target="#carousel-indicators"
+                      data-slide-to="2"
+                    ></li>
+                    <li
+                      data-target="#carousel-indicators"
+                      data-slide-to="3"
+                    ></li>
+                    <li
+                      data-target="#carousel-indicators"
+                      data-slide-to="4"
+                    ></li>
+                    <li
+                      data-target="#carousel-indicators"
+                      data-slide-to="5"
+                    ></li>
+                  </ol>
+                  <div class="carousel-inner h-100 w-100">
+                    <div class="carousel-item h-100 w-100 active">
+                      <img
+                        class="d-block h-100 mx-auto carousel-image"
+                        src="assets/imgs/content/co-curricular/1. Level 1-Global Awareness and Current Affairs.jpg"
+                      />
+                    </div>
+                    <div class="carousel-item h-100 w-100">
+                      <img
+                        class="d-block h-100 mx-auto carousel-image"
+                        src="assets/imgs/content/co-curricular/2. Level 2- Entreprenurship.jpg"
+                      />
+                    </div>
+                    <div class="carousel-item h-100 w-100">
+                      <img
+                        class="d-block h-100 mx-auto carousel-image"
+                        src="assets/imgs/content/co-curricular/3.  Level 3- Technology and Innovation_pages-to-jpg-0001.jpg"
+                      />
+                    </div>
+                    <div class="carousel-item h-100 w-100">
+                      <img
+                        class="d-block h-100 mx-auto carousel-image"
+                        src="assets/imgs/content/co-curricular/4. Level 4 - 21st Century Life Skills_pages-to-jpg-0001.jpg"
+                      />
+                    </div>
+                    <div class="carousel-item h-100 w-100">
+                      <img
+                        class="d-block h-100 mx-auto carousel-image"
+                        src="assets/imgs/content/co-curricular/5. Level 5- Basics in Finance and Economics_pages-to-jpg-0001.jpg"
+                      />
+                    </div>
+                    <div class="carousel-item h-100 w-100">
+                      <img
+                        class="d-block h-100 mx-auto carousel-image"
+                        src="assets/imgs/content/co-curricular/6. Level 6- Global History.jpg"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    class="carousel-control-prev"
+                    href="#carousel-indicators"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#carousel-indicators"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
 
-        <div class="row">
-          <div class="col-6 col-sm-4">
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/co-curricular/1. Level 1-Global Awareness and Current Affairs.jpg"
-                alt="Brick Laying"
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <!-- <h5>Brick Laying</h5> -->
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/co-curricular/2. Level 2- Entreprenurship.jpg"
-                alt=""
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/co-curricular/2. Mahek Dugar- Crack the Case_page-0001.jpg"
-                alt=""
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4">
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/co-curricular/3.  Level 3- Technology and Innovation_pages-to-jpg-0001.jpg"
-                alt=""
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/co-curricular/4. Level 4 - 21st Century Life Skills_pages-to-jpg-0001.jpg"
-                alt=""
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/co-curricular/3. 2021-Speech Competition - Winner.jpg"
-                alt=""
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-4 third-column">
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/co-curricular/5. Level 5- Basics in Finance and Economics_pages-to-jpg-0001.jpg"
-                alt="Project Gyaan Shaala"
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/co-curricular/1. Global certification - Mahek Dugar_page-0001.jpg"
-                alt="Project Gyaan Shaala"
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="img-wrapper">
-              <video controls>
+          <div class="row align-items-center mt-5">
+            <div
+              class="col-sm-7"
+              data-aos="zoom-in-right"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              <video width="540" height="360" controls>
                 <source
                   src="assets/imgs/content/co-curricular/1. Space Tourism and Colonization of Mars _ Impromptu speech challenge _ Early Steps Academy.mp4"
                 />
               </video>
+            </div>
+            <div
+              class="col-sm-5"
+              data-aos="zoom-in-left"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              <h6 class="title">
+                Snippets from a session- Space Tourism and Colonization of Mars
+              </h6>
+              <h6 class="subtitle">
+                (Featured on the website of Early Steps Academy)
+              </h6>
+            </div>
+          </div>
+
+          <div class="row align-items-center mt-5">
+            <p
+              class="col-sm-6"
+              data-aos="zoom-in-right"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              Teaming up with four other talented peers from across the world, I
+              also participated in their Global Crack the Case Competition,
+              securing a position in the top 10 teams with a score of 496/500
+              from over 5,000 teams across 26 countries. Also, winning the Jeff
+              Bezos Global Speech Championship was a proud moment that boosted
+              my confidence. Early Steps Academy connected me with global peers,
+              shaping me into a well-rounded individual prepared for business
+              and management challenges. I am grateful for these opportunities
+              and excited to make a positive impact.
+            </p>
+            <section
+              id="carousel2"
+              class="col-sm-6 carousel"
+              data-aos="zoom-in-left"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              <div class="container h-100 w-100">
+                <div
+                  id="carousel-indicators-2"
+                  class="carousel slide h-100 w-100"
+                  data-ride="carousel"
+                >
+                  <ol class="carousel-indicators" style="bottom: 0">
+                    <li
+                      data-target="#carousel-indicators-2"
+                      data-slide-to="0"
+                      class="active"
+                    ></li>
+                    <li
+                      data-target="#carousel-indicators-2"
+                      data-slide-to="1"
+                    ></li>
+                    <li
+                      data-target="#carousel-indicators-2"
+                      data-slide-to="2"
+                    ></li>
+                  </ol>
+                  <div class="carousel-inner h-100 w-100">
+                    <div class="carousel-item h-100 w-100 active">
+                      <img
+                        class="d-block h-100 mx-auto carousel-image"
+                        src="assets/imgs/content/co-curricular/1. Global certification - Mahek Dugar_page-0001.jpg"
+                      />
+                    </div>
+                    <div class="carousel-item h-100 w-100">
+                      <img
+                        class="d-block h-100 mx-auto carousel-image"
+                        src="assets/imgs/content/co-curricular/3. 2021-Speech Competition - Winner.jpg"
+                      />
+                    </div>
+                    <div class="carousel-item h-100 w-100">
+                      <img
+                        class="d-block h-100 mx-auto carousel-image"
+                        src="assets/imgs/content/co-curricular/2. Mahek Dugar- Crack the Case_page-0001.jpg"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    class="carousel-control-prev"
+                    href="#carousel-indicators-2"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#carousel-indicators-2"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div id="wharton" class="section pb-0">
+          <div class="text-center">
+            <h6 class="title mb-4">
+              Wharton Global High School Investment Competition
+            </h6>
+            <div class="row align-items-center">
+              <div class="col-sm-5" data-aos="zoom-in-right">
+                <div class="img-wrapper mb-0">
+                  <img
+                    src="assets/imgs/content/co-curricular/Mahek - Wharton Certificate_page-0001 (1).jpg"
+                    alt="Wharton Certificate"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-infos">
+                      <a href="javascript:void(0)"
+                        ><i class="ti-zoom-in"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-7" data-aos="zoom-in-left">
+                <p class="text-left">
+                  Participating in this competition offered me a remarkable
+                  opportunity to explore the realm of equity investmenting. Out
+                  of 1,400 teams representing 53 countries, our team could
+                  successfully advance upto the quarterfinals.
+                  <br />
+                  Throughout the competition, I wholeheartedly immersed myself
+                  in the world of investing, acquiring knowledge in risk
+                  management, diversification, and company analysis. Moreover,
+                  collaborating with teams from various parts of the world
+                  broadened my perspectives.The investing skills I acquired hold
+                  immense value for life, enabling me to make informed
+                  decisions.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -232,75 +420,212 @@
     </section>
     <!-- End of Business & Management Related -->
 
-    <!-- Wharton -->
-    <section id="wharton" class="section pb-0">
-      <div class="container text-center">
-        <h6 class="section-title mb-4">
-          Wharton Global High School Investment Competition
-        </h6>
-        <div class="row">
-          <div class="col-sm-5" data-aos="zoom-in-right">
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/co-curricular/Mahek - Wharton Certificate_page-0001 (1).jpg"
-                alt="Brick Laying"
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <!-- <h5>Brick Laying</h5> -->
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-7" data-aos="zoom-in-left">
-            <p class="text-left">
-              Participating in this competition offered me a remarkable
-              opportunity to explore the realm of equity investmenting. Out of
-              1,400 teams representing 53 countries, our team could successfully
-              advance upto the quarterfinals.
-              <br />
-              Throughout the competition, I wholeheartedly immersed myself in
-              the world of investing, acquiring knowledge in risk management,
-              diversification, and company analysis. Moreover, collaborating
-              with teams from various parts of the world broadened my
-              perspectives.The investing skills I acquired hold immense value
-              for life, enabling me to make informed decisions.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End of Wharton -->
-
     <!-- Jain Vidya section -->
     <section id="other" class="section pb-0">
-      <div class="container text-center">
-        <h6 class="section-title mb-4">Jain Vidya</h6>
-        <div class="row jain-vidya">
-          <div class="col-sm-7" data-aos="zoom-in-right">
-            <p class="text-left">
-              Being a Jain , from a young age, I began my journey into Jain
-              Vidya, the philosophy of Jainism. It felt natural for me to stay
-              connected to my roots and culture. Jain Vidya has become a crucial
-              part of my life, shaping my beliefs and guiding my actions. It
-              gives me purpose and direction, teaching me to respect and value
-              all living beings through non-violence (ahimsa). I have completed
-              two levels so far, and each one has expanded my knowledge and
-              understanding in profound ways.
-            </p>
+      <div class="container text-center position-relative">
+        <h6 class="section-title main-title">Other Activities</h6>
+        <div id="jainism" class="section pb-0">
+          <h6 class="title mb-4">Principles of Jainism Through Jain Vidya</h6>
+          <div class="row jain-vidya align-items-center">
+            <section
+              id="carousel3"
+              class="col-sm-6 carousel"
+              data-aos="zoom-in-right"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              <div class="container h-100 w-100">
+                <div
+                  id="carousel-indicators-3"
+                  class="carousel slide w-100 h-100"
+                  data-ride="carousel"
+                >
+                  <ol class="carousel-indicators" style="bottom: 0">
+                    <li
+                      data-target="#carousel-indicators-3"
+                      data-slide-to="0"
+                      class="active"
+                    ></li>
+                    <li
+                      data-target="#carousel-indicators-3"
+                      data-slide-to="1"
+                    ></li>
+                  </ol>
+                  <div class="carousel-inner w-100 h-100">
+                    <div class="carousel-item w-100 h-100 active">
+                      <img
+                        class="d-block w-100 h-100 mx-auto carousel-image"
+                        src="assets/imgs/content/co-curricular/Jain Vidya - Level 1.jpg"
+                      />
+                    </div>
+                    <div class="carousel-item w-100 h-100">
+                      <img
+                        class="d-block w-100 h-100 mx-auto carousel-image"
+                        src="assets/imgs/content/co-curricular/Jain Vidya- Level 2.jpeg"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    class="carousel-control-prev"
+                    href="#carousel-indicators-3"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#carousel-indicators-3"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+            <div class="col-sm-6" data-aos="zoom-in-left">
+              <p class="text-left">
+                Being a Jain , from a young age, I began my journey into Jain
+                Vidya, the philosophy of Jainism. It felt natural for me to stay
+                connected to my roots and culture. Jain Vidya has become a
+                crucial part of my life, shaping my beliefs and guiding my
+                actions. It gives me purpose and direction, teaching me to
+                respect and value all living beings through non-violence
+                (ahimsa). I have completed two levels so far, and each one has
+                expanded my knowledge and understanding in profound ways.
+              </p>
+            </div>
           </div>
+        </div>
 
-          <div class="col-sm-5" data-aos="zoom-in-left">
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/co-curricular/_Jain Vidya - Level 1.jpg"
-                alt="Brick Laying"
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <!-- <h5>Brick Laying</h5> -->
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+        <div id="coding-camps" class="section pb-0">
+          <h6 class="title mb-4">Coding Camps</h6>
+          <div class="row align-items-center">
+            <div class="col-sm-7" data-aos="zoom-in-right">
+              <p class="text-left">
+                Being a Jain , from a young age, I began my journey into Jain
+                Vidya, the philosophy of Jainism. It felt natural for me to stay
+                connected to my roots and culture. Jain Vidya has become a
+                crucial part of my life, shaping my beliefs and guiding my
+                actions. It gives me purpose and direction, teaching me to
+                respect and value all living beings through non-violence
+                (ahimsa). I have completed two levels so far, and each one has
+                expanded my knowledge and understanding in profound ways.
+              </p>
+            </div>
+            <div class="col-sm-5" data-aos="zoom-in-left">
+              <div class="img-wrapper">
+                <img
+                  src="assets/imgs/content/co-curricular/AI Camp Certificate.jpg"
+                  alt="AI Camp Certificate"
+                />
+                <div class="overlay">
+                  <div class="overlay-infos">
+                    <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="olympiads" class="section pb-0">
+          <h6 class="title mb-4">Olympiads & MUNs</h6>
+          <p
+            class="mb-5 pb-4"
+            data-aos="zoom-in"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            In my pursuit of knowledge and personal growth, I have
+            enthusiastically participated in MUN’s various Olympiads. It all
+            began with the Anand Niketan Model UN 3rd Edition, where I
+            represented South Africa at the United Nations Office of Drugs and
+            Crime in 2019.
+            <br />
+            <br />
+            Additionally, I achieved recognition by qualifying for the ASSET
+            Talent Search as part of the top 5% of students who appeared for
+            ASSET 2019. At the SOF-International English Olympiad in 2021, I
+            secured the 25th Zonal Rank and was awarded the Medal of
+            Distinction.
+            <br />
+            <br />
+            Most recently, at the Global Economics Olympiad 2022, I qualified
+            for the Regional Round with an ‘A’ grade representing the Gujarat
+            region. These experiences have been transformative, allowing me to
+            explore new fields, test my knowledge, and strive for excellence.
+          </p>
+          <div
+            class="row"
+            data-aos="zoom-in"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <div class="col-sm-6">
+              <div class="img-wrapper">
+                <img
+                  src="assets/imgs/content/co-curricular/olympiads/2. 2022- Global Economics Olympiad- Regional Level Qualified_page-0001.jpg"
+                  alt="2022- Global Economics Olympiad- Regional Level"
+                />
+                <div class="overlay">
+                  <div class="overlay-infos">
+                    <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="img-wrapper col-6">
+                  <img
+                    src="assets/imgs/content/co-curricular/olympiads/6. ASSET - 2019.jpg"
+                    alt="ASSET"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-infos">
+                      <a href="javascript:void(0)"
+                        ><i class="ti-zoom-in"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="img-wrapper col-6">
+                  <img
+                    src="assets/imgs/content/co-curricular/olympiads/7. MUN-2019.jpg"
+                    alt="MUN"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-infos">
+                      <a href="javascript:void(0)"
+                        ><i class="ti-zoom-in"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="col-sm-6">
+              <div class="img-wrapper">
+                <img
+                  src="assets/imgs/content/co-curricular/olympiads/4.  2021- English Olympiad - Distinction (Zonal Level)_page-0001.jpg"
+                  alt="021- English Olympiad - Distinction (Zonal Level)"
+                />
+                <div class="overlay">
+                  <div class="overlay-infos">
+                    <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -308,112 +633,90 @@
         </div>
       </div>
     </section>
-    <!-- End of Jain vidyas section -->
 
-    <!-- Coding Camps -->
-    <section id="coding-camps" class="section" data-aos="zoom-in">
-      <div class="container text-center">
-        <!-- <h6 class="subtitle"></h6> -->
-        <h6 class="section-title mb-4">Coding Camps</h6>
-        <p>
-          To embrace and enhance my coding skills, I attended the Python and AI
-          Online Summer Camp organized by IIT Delhi Technology Innovation Hub –
-          Rancho Labs, in the summer of 2023. It provided a comprehensive
-          understanding of Python programming and AI applications through
-          interactive sessions, coding exercises, and practical projects.The
-          knowledgeable instructors and collaborative learning environment made
-          the camp engaging.
-        </p>
-      </div>
-    </section>
-    <!-- End of conding camps -->
-
-    <!-- Olympiads section -->
-    <section id="olympiads" class="section pt-0" data-aos="zoom-in">
-      <div class="container text-center">
-        <!-- <h6 class="subtitle"></h6> -->
-        <h6 class="section-title mb-4">Olympiads</h6>
-        <p class="mb-5 pb-4">
-          In my pursuit of knowledge and personal growth, I have
-          enthusiastically participated in MUN’s various Olympiads.
-          <br />
-          It all began with the Anand Niketan Model UN 3rd Edition, where I
-          represented South Africa at the United Nations Office of Drugs and
-          Crime in 2019.
-          <br />
-          Additionally, I achieved recognition by qualifying for the ASSET
-          Talent Search as part of the top 5% of students who appeared for ASSET
-          2019. At the SOF-International English Olympiad in 2021, I secured the
-          25th Zonal Rank and was awarded the Medal of Distinction.
-          <br />
-          Most recently, at the Global Economics Olympiad 2022, I qualified for
-          the Regional Round with an ‘A’ grade representing the Gujarat region.
-          <br />
-          These experiences have been transformative, allowing me to explore new
-          fields, test my knowledge, and strive for excellence.
-        </p>
-
-        <div class="row">
-          <!-- Column 1 -->
-          <div class="col-6 col-sm-4">
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/co-curricular/olympiads/2. 2022- Global Economics Olympiad- Regional Level Qualified_page-0001.jpg"
-                alt="Brick Laying"
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <!-- <h5>Brick Laying</h5> -->
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
+    <!-- Projects section -->
+    <section id="projects" class="section">
+      <div
+        class="container text-center"
+        data-aos="zoom-in"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
+        <h6 class="section-title">Projects</h6>
+        <h6 class="subtitle mb-4">
+          Unveiling Insights Through My School Projects
+        </h6>
+        <div class="project row text-left">
+          <p class="col-sm-10">
+            1. Conducted a fundamental analysis of the company Kia Motors,
+            helped gain valuable insights into various strategic decision-making
+            processes.
+          </p>
+          <div class="col-sm-2 mb-3 mb-sm-0">
+            <a
+              class="btn btn-outline-primary w-sm"
+              href="/assets/imgs/content/co-curricular/School Projects/BM FA Kia Motors (1).pdf"
+              >View Report</a
+            >
           </div>
-
-          <!-- Column 2 -->
-          <div class="col-6 col-sm-4">
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/co-curricular/olympiads/6. ASSET - 2019.jpg"
-                alt="Project Gyaan Shaala"
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/co-curricular/olympiads/7. MUN-2019.jpg"
-                alt="Project Gyaan Shaala"
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="project row text-left">
+          <p class="col-sm-10">
+            2. Exploring the methods of sampling enhanced my understanding of
+            data collection techniques and their application in research.
+          </p>
+          <div class="col-sm-2 mb-3 mb-sm-0">
+            <a
+              class="btn btn-outline-primary w-sm"
+              href="/assets/imgs/content/co-curricular/School Projects/BM methods of sampling  (2).pdf"
+              >View Report</a
+            >
           </div>
-
-          <!-- Column 3 -->
-          <div class="col-12 col-sm-4 third-column">
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/co-curricular/olympiads/4.  2021- English Olympiad - Distinction (Zonal Level)_page-0001.jpg"
-                alt=""
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="project row text-left">
+          <p class="col-sm-10">
+            3. Unraveling the intricacies of Von Koch snowflake exposed me to
+            the fascinating world of fractals and their relevance in
+            mathematics.
+          </p>
+          <div class="col-sm-2 mb-3 mb-sm-0">
+            <a
+              class="btn btn-outline-primary w-sm"
+              href="/assets/imgs/content/co-curricular/School Projects/Maths FA 1 VON KOCH SNOWFLAKE.pdf"
+              >View Report</a
+            >
+          </div>
+        </div>
+        <div class="project row text-left">
+          <p class="col-sm-10">
+            4. Market research on Rivulet Digital taught me the significance of
+            consumer preferences and market dynamics in shaping business
+            strategies.
+          </p>
+          <div class="col-sm-2 mb-3 mb-sm-0">
+            <a
+              class="btn btn-outline-primary w-sm"
+              href="/assets/imgs/content/co-curricular/School Projects/RESEARCH.pptx.pdf"
+              >View Report</a
+            >
+          </div>
+        </div>
+        <div class="project row text-left">
+          <p class="col-sm-10">
+            5. Constructing an atomic theory timeline highlighted the evolution
+            of scientific knowledge over time.
+          </p>
+          <div class="col-sm-2 mb-3 mb-sm-0">
+            <a
+              class="btn btn-outline-primary w-sm"
+              href="/assets/imgs/content/co-curricular/School Projects/Timeline- Unit 7 Physics.pdf"
+              >View Report</a
+            >
           </div>
         </div>
       </div>
     </section>
-    <!-- End of Olympiads section -->
+    <!-- End of Projects section -->
 
     <div id="fullpage" onclick="removeImage()">
       <img src="" alt="" />
@@ -431,13 +734,25 @@
           <div class="col-8 col-sm-6">
             <div class="socials">
               <a
-                href="mailto:mahekdugar@gmail.com"
+                class="social-item"
+                target="_blank"
+                href="https://www.linkedin.com/in/mahek-dugar-b02904244/"
+                ><i class="ti-linkedin"></i
+              ></a>
+              <a
+                class="social-item"
+                target="_blank"
+                href="https://youtube.com/@Mahek-Dugar"
+                ><i class="ti-youtube"></i
+              ></a>
+              <a
+                href="mailto:mahekdugar21@gmail.com"
                 target="_blank"
                 class="d-flex align-items-center"
                 ><div class="social-item">
                   <i class="ti-email"></i>
                 </div>
-                mahekdugar@gmail.com</a
+                mahekdugar21@gmail.com</a
               >
             </div>
           </div>

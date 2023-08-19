@@ -3245,14 +3245,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #242582;
-  border-color: #242582;
+  color: var(--primary);
+  border-color: var(--primary);
 }
 
 .btn-outline-primary:hover {
-  color: #212529;
-  background-color: #242582;
-  border-color: #242582;
+  color: var(--light);
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 
 .btn-outline-primary:focus,
@@ -3269,7 +3269,7 @@ fieldset:disabled a.btn {
 .btn-outline-primary:not(:disabled):not(.disabled):active,
 .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
-  color: #212529;
+  color: var(--light);
   background-color: #242582;
   border-color: #242582;
 }
@@ -3277,7 +3277,7 @@ fieldset:disabled a.btn {
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
 .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 122, 87, 0.5);
+  box-shadow: 0 0 0 0.2rem #2426827d;
 }
 
 .btn-outline-secondary {
@@ -11384,11 +11384,12 @@ h6 {
 
 @media (min-width: 992px) {
   .title {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
 .section-title {
+  color: var(--primary);
   font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
 }
 
@@ -11421,6 +11422,7 @@ pre {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  justify-content: flex-end;
 }
 
 .socials .social-item {
@@ -11800,7 +11802,7 @@ pre {
 
 @media (max-width: 767.98px) {
   .navbar {
-    padding: 0 20px 20px;
+    padding: 0 20px;
   }
 }
 
@@ -11851,15 +11853,6 @@ pre {
   margin-bottom: 0;
 }
 
-.page-footer .socials {
-  max-width: 210px;
-  margin-left: auto;
-}
-
-.page-footer .socials .social-item {
-  margin-left: auto;
-}
-
 @media (max-width: 767.98px) {
   .page-footer {
     padding: 20px 0;
@@ -11873,7 +11866,7 @@ pre {
 }
 
 .header {
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .header .container {
@@ -11944,6 +11937,9 @@ pre {
 }
 
 @media (max-width: 991.98px) {
+  .header {
+    padding-top: 80px;
+  }
   .header .container {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
