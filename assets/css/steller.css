@@ -11842,7 +11842,7 @@ pre {
 }
 
 .page-footer {
-  background: #fcfdff;
+  background: var(--white);
 }
 
 .page-footer .row {
@@ -11866,7 +11866,7 @@ pre {
 }
 
 .header {
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 .header .container {
@@ -11897,8 +11897,8 @@ pre {
 
 .header .container .infos p {
   margin-top: 10px;
-  font-size: 18px;
-  line-height: 1.15;
+  /* font-size: 18px; */
+  line-height: 1.35;
 }
 
 .header .container .infos .btn {
@@ -12054,10 +12054,6 @@ pre {
 .section {
   position: relative;
   padding: 5rem 0;
-}
-
-.section:nth-child(even) {
-  background: white;
 }
 
 .section.bg-white {
