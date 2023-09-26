@@ -103,6 +103,22 @@ h6.intro-title {
   padding-right: 1.5rem;
 }
 
+.carousel-caption {
+  background-image: linear-gradient(
+    0deg,
+    rgba(215, 217, 252, 0.75) 1%,
+    rgba(248, 249, 250, 0) 99%
+  );
+  width: 100%;
+}
+
+.carousel-caption h5 {
+  color: var(--primary);
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
 .cards-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -120,6 +136,15 @@ h6.intro-title {
 .card:hover {
   transform: scale(1.02);
   transition: all 0.15s ease;
+}
+
+.card a {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.card a:hover {
+  color: var(--purple);
 }
 
 .div1 {
@@ -149,10 +174,6 @@ h6.intro-title {
   font-size: 16px;
 }
 
-/* .section { */
-/* background-image: linear-gradient(180deg, #eaebff 1%, #f8f9fa 100%); */
-/* } */
-
 .section:nth-child(odd) {
   background-color: #d7d9fc22;
 }
@@ -164,6 +185,38 @@ h6.intro-title {
 .section-img {
   max-height: 400px;
   max-width: 300px;
+}
+
+.community-img {
+  max-width: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.creativity-img {
+  max-height: 325px;
+  object-fit: contain;
+}
+
+#digital-quest .section-title.logo {
+  font-size: 36px;
+}
+
+#digital-quest .sub-title.logo {
+  font-size: 18px;
+}
+
+#digital-quest h4.sub-title {
+  color: var(--primary);
+}
+
+.page-footer {
+  background: #d7d7f4;
+}
+
+.page-footer p a {
+  font-size: 1.15rem;
+  font-weight: 500;
 }
 
 .main-title {
@@ -188,17 +241,12 @@ section#carousel .carousel .carousel-indicators {
   bottom: 0;
 }
 
-section.carousel {
-  height: 325px;
-  padding: 0;
-}
-
-section#carousel3 {
+#carousel3 {
   height: 350px;
 }
 
-section.carousel.ylac,
-section.carousel.home {
+.carousel.ylac,
+.carousel.home {
   height: 600px;
 }
 
@@ -236,13 +284,6 @@ section#carousel .carousel-inner:after {
   width: 100%;
   height: 65%;
   z-index: 1;
-}
-
-.carousel-caption h5 {
-  text-transform: uppercase;
-  font-size: 1.75rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
 }
 
 .quote-container {
@@ -458,6 +499,20 @@ iframe {
   .div6 {
     grid-area: 6 / 1 / 7 / 2;
   }
+
+  #digital-quest .section-title.logo {
+    font-size: 24px;
+  }
+
+  #digital-quest .sub-title.logo {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .feets-on-street-experience img {
+    max-width: 300px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -467,10 +522,21 @@ iframe {
   .card-body {
     padding: 1rem;
   }
-  .section {
+
+  .section:first-of-type {
     padding-top: 80px;
-    padding-bottom: 2rem;
   }
+
+  .community-img {
+    max-width: 100%;
+  }
+
+  .feets-on-street-experience {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+
   .section-title span {
     font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
   }
