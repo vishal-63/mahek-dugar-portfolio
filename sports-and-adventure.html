@@ -15,15 +15,14 @@
     />
     <link rel="shortcut icon" href="assets/imgs/logo.svg" type="image/x-icon" />
     <!-- Bootstrap + Steller main styles -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="assets/css/steller.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="80" id="home">
     <!-- Page Navigation -->
     <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top"
+      class="navbar navbar-expand-lg navbar-light fixed-top secondary"
       data-spy="affix"
       data-offset-top="80"
     >
@@ -43,7 +42,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          class="collapse navbar-collapse mb-3 mb-sm-0"
+          id="navbarSupportedContent"
+        >
           <ul class="navbar-nav ml-auto align-items-center">
             <li class="nav-item">
               <a class="nav-link" href="co-curricular.html">Co-Curricular</a>
@@ -78,8 +80,8 @@
     </nav>
     <!-- End of Page Navigation -->
 
-    <section id="introduction" class="section">
-      <div class="container py-3 py-sm-4 text-center">
+    <section id="introduction" class="section first">
+      <div class="container pt-3 pt-sm-4 text-center">
         <h5 class="section-title text-center mb-3 mb-sm-5">
           Embracing the Athlete Within
         </h5>
@@ -103,25 +105,26 @@
         <h5 class="section-title text-center mb-3 mb-sm-5">Sports</h5>
         <div class="row align-items-center">
           <div class="text-left col-sm-6 mb-3 mb-sm-0">
-            One of my fondest memories is winning the sack race at the age of 8.
-            This moment motivated me to actively pursue sports and I went on
-            exploring various track and field events along with indoor games
-            like badminton.Through years of practice and training, I could ace
-            sprints, relay, hurdles and long jumps by taking away the gold in
-            each of them consecutively for three years from 2018 to 2020. The
-            experience of crossing the finishing line remains unparalleled.
+            &nbsp;&nbsp;&nbsp;&nbsp;One of my fondest memories is winning the
+            sack race at the age of 8. This moment motivated me to actively
+            pursue sports and I went on exploring various track and field events
+            along with indoor games like badminton.Through years of practice and
+            training, I could ace sprints, relay, hurdles and long jumps by
+            taking away the gold in each of them consecutively for three years
+            from 2018 to 2020. The experience of crossing the finishing line
+            remains unparalleled.
             <br />
-            Being the captain of my school house team for Kho-kho, Kabaddi,and
-            Football has helped me understand how leadership, teamwork and
-            strategies can make you embrace challenges and win games. I have
-            always enjoyed playing badminton tournaments for years and even
-            organized one as part of my passion project, raising funds for
-            digital literacy. I strongly believe that sports bring out the best
-            in people, teaches competitiveness, and instills a go-getter
-            attitude.
+            &nbsp;&nbsp;&nbsp;&nbsp;Being the captain of my school house team
+            for Kho-kho, Kabaddi,and Football has helped me understand how
+            leadership, teamwork and strategies can make you embrace challenges
+            and win games. I have always enjoyed playing badminton tournaments
+            for years and even organized one as part of my passion project,
+            raising funds for digital literacy. I strongly believe that sports
+            bring out the best in people, teaches competitiveness, and instills
+            a go-getter attitude.
           </div>
           <div class="col-sm-3">
-            <div class="img-wrapper">
+            <div class="img-wrapper mb-4">
               <img
                 src="assets/imgs/content/sports/Football .JPG"
                 alt="sports"
@@ -132,7 +135,7 @@
                 </div>
               </div>
             </div>
-            <div class="img-wrapper">
+            <div class="img-wrapper mb-4">
               <img
                 src="assets/imgs/content/sports/Long Jump - Gold.JPG"
                 alt="sports"
@@ -145,7 +148,7 @@
             </div>
           </div>
           <div class="col-sm-3">
-            <div class="img-wrapper">
+            <div class="img-wrapper mb-4">
               <img
                 src="assets/imgs/content/sports/Regional Level- Relay -4x100-Bronze.JPG"
                 alt="sports"
@@ -156,7 +159,7 @@
                 </div>
               </div>
             </div>
-            <div class="img-wrapper">
+            <div class="img-wrapper mb-4">
               <img
                 src="assets/imgs/content/sports/Relay -4 x100 - Gold.JPG"
                 alt="sports"
@@ -203,6 +206,7 @@
                 id="adventures-carousel"
                 class="carousel slide h-100 w-100"
                 data-ride="carousel"
+                data-interval="2000"
               >
                 <ol class="carousel-indicators" style="bottom: 0">
                   <li
@@ -326,34 +330,11 @@
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
     <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-    <!-- Animate on Scroll -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!-- steller js -->
     <script src="assets/js/steller.js"></script>
 
     <script>
-      AOS.init({
-        // Global settings:
-        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
-        initClassName: "aos-init", // class applied after initialization
-        animatedClassName: "aos-animate", // class applied on animation
-        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        offset: 80, // offset (in px) from the original trigger point
-        delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 600, // values from 0 to 3000, with step 50ms
-        easing: "ease", // default easing for AOS animations
-        once: false, // whether animation should happen only once - while scrolling down
-        mirror: false, // whether elements should animate out while scrolling past them
-        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
-      });
-
       const imgs = document.querySelectorAll(".img-wrapper img");
       const zoomIcons = document.querySelectorAll(".overlay-infos a");
       const fullPage = document.querySelector("#fullpage");

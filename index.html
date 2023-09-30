@@ -23,8 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <script
       src="https://kit.fontawesome.com/bdb7804654.js"
       crossorigin="anonymous"
@@ -53,7 +52,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          class="collapse navbar-collapse mb-3 mb-sm-0"
+          id="navbarSupportedContent"
+        >
           <ul class="navbar-nav ml-auto align-items-center">
             <li class="nav-item">
               <a class="nav-link" href="co-curricular.html">Co-Curricular</a>
@@ -76,36 +78,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#testimonials">Testimonials</a>
             </li>
-            <!-- <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Archive
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="co-curricular.html"
-                  >Co-Curricular</a
-                >
-                <a class="dropdown-item" href="community-service.html"
-                  >Community Service</a
-                >
-                <a class="dropdown-item" href="passion-project.html"
-                  >Passion Project</a
-                >
-                <a class="dropdown-item" href="sports-and-adventure.html"
-                  >Sports and Adventure</a
-                >
-                <a class="dropdown-item" href="special-interests.html"
-                  >Special Interests</a
-                >
-              </div>
-            </li> -->
 
             <li class="nav-item">
               <a
@@ -122,7 +94,7 @@
     <!-- End of page navibation -->
 
     <!-- Introduction Header -->
-    <header class="header" id="home">
+    <header class="header mb-4 d-flex" id="home">
       <div class="container h-auto py-2">
         <div class="row">
           <div class="col-12 col-md-6 d-flex flex-column align-items-center">
@@ -145,9 +117,6 @@
                 informed decision making. I envision a future where I can
                 contribute positively to the ever-evolving landscape of
                 technology.
-                <br />
-                Peruse this page to know more about my experiences and
-                endeavors!
               </p>
               <a
                 class="nav-link btn btn-primary rounded resume-btn"
@@ -331,32 +300,12 @@
             </section>
           </div>
         </div>
-        <!-- <div class="img-holder" data-aos="zoom-in-right">
-          <lottie-player
-            src="https://assets1.lottiefiles.com/private_files/lf30_omixcbvz.json"
-            background="transparent"
-            speed="1"
-            style="width: 300px; height: 300px"
-            loop
-            autoplay
-          ></lottie-player>
-        </div> -->
-        <!-- <div class="infos" data-aos="zoom-in-left">
-          <h6 class="subtitle">Hey, there!</h6>
-          <p>
-            An enthusiastic individual on a quest for knowledge and personal
-            growth. Aspiring to study Business Analytics I look forward to
-            exploring how business functions and technology can co-exist to
-            create a positive contribution in the world of business. Explore
-            this website to get a glimpse of my experiences and endeavors!
-          </p>
-        </div> -->
       </div>
     </header>
     <!-- End of introduction header -->
 
-    <div id="cards" class="container-fluid my-sm-5 px-sm-5">
-      <h4 class="section-title text-center">Activities</h4>
+    <div id="cards" class="container-fluid my-5 px-sm-5">
+      <h4 class="section-title text-center">My Experience and Endeavours</h4>
       <div class="cards-container mt-4">
         <div class="div1 card">
           <div class="card-body">
@@ -404,13 +353,23 @@
                     At Global Economics Olympiads and SOF English Olympiads.
                   </p>
                 </li>
+                <li>
+                  <a href="co-curricular.html#school-projects"
+                    >School Projects</a
+                  >
+                </li>
               </ul>
-
-              <img
-                src="assets/imgs/content/co-curricular/2. Level 2- Entreprenurship.jpg"
-                alt=""
-                style="max-height: 300px"
-              />
+              <div class="img-wrapper">
+                <img
+                  src="assets/imgs/content/co-curricular/2. Level 2- Entreprenurship.jpg"
+                  alt="sports"
+                />
+                <div class="overlay">
+                  <div class="overlay-infos">
+                    <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -420,30 +379,31 @@
             <div class="card-text d-sm-flex align-items-center">
               <ul>
                 <li>
-                  <h6 class="subtitle">
-                    <a href="skills.html#coding">Coding:</a>
-                  </h6>
+                  <a href="skills.html#coding">Coding:</a>
                   <p>
                     Python and AI Summer Camp at the Rancho Labs, Technology
                     Innovation Hub, IIT Delhi.
                   </p>
                 </li>
                 <li>
-                  <h6 class="subtitle">
-                    <a href="skills.html#public-speaking">Public Speaking</a>
-                  </h6>
+                  <a href="skills.html#public-speaking">Public Speaking</a>
                   <p>
                     Insightful experiences with MUN’s, Debate and Case
                     Competition.
                   </p>
                 </li>
               </ul>
-
-              <img
-                src="assets/imgs/content/co-curricular/AI Camp Certificate.jpg"
-                alt=""
-                style="max-width: 200px; object-fit: contain"
-              />
+              <div class="img-wrapper" style="max-width: 200px">
+                <img
+                  src="assets/imgs/content/co-curricular/AI Camp Certificate.jpg"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="overlay-infos">
+                    <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -455,9 +415,7 @@
             <div class="card-text d-sm-flex align-items-center">
               <ul>
                 <li>
-                  <h6 class="subtitle">
-                    <a href="leadership.html#digital-quest">Digital Quest:</a>
-                  </h6>
+                  <a href="leadership.html#digital-quest">Digital Quest:</a>
                   <p>
                     Leading an initiative to foster digital inclusion and
                     sustainability, by setting up 2 computer centers for the
@@ -465,18 +423,21 @@
                   </p>
                 </li>
                 <li>
-                  <h6 class="subtitle">
-                    <a href="leadership.html#math-club">Math Club:</a>
-                  </h6>
+                  <a href="leadership.html#math-club">Math Club:</a>
                   <p>Co-founded the club for my school’s NGO Sneh Srushti.</p>
                 </li>
               </ul>
-
-              <img
-                src="assets/imgs/content/leadership/MATH CLUB.jpeg"
-                alt=""
-                style="max-width: 200px; object-fit: cover"
-              />
+              <div class="img-wrapper" style="max-width: 250px">
+                <img
+                  src="assets/imgs/content/cards/Digital Quest .jpeg"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="overlay-infos">
+                    <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -488,11 +449,9 @@
             <div class="card-text d-sm-flex align-items-center">
               <ul>
                 <li>
-                  <h6 class="subtitle">
-                    <a href="community-service.html#project-gyaanshala"
-                      >Project Gyanshaala:</a
-                    >
-                  </h6>
+                  <a href="community-service.html#project-gyaanshala"
+                    >Project Gyanshaala:</a
+                  >
                   <p>
                     Fundraised and refurbished a school for the children of
                     construction workers and taught them basics in English and
@@ -500,12 +459,10 @@
                   </p>
                 </li>
                 <li>
-                  <h6 class="subtitle">
-                    <a href="leadership.html#ylac"
-                      >Young Leader for Active Citizenship (YLAC) - 8 week
-                      Counter Speech Fellowship:</a
-                    >
-                  </h6>
+                  <a href="community-service.html#ylac"
+                    >Young Leader for Active Citizenship (YLAC) - 8 week Counter
+                    Speech Fellowship:</a
+                  >
                   <p>
                     Spread awareness on issues like body positivity, digital
                     safety, teenage wellbeing and diversity, equity, inclusion
@@ -517,11 +474,18 @@
                 </li>
               </ul>
 
-              <img
-                src="assets/imgs/content/community/ylac/1.jpg"
-                alt=""
-                style="max-height: 300px; object-fit: cover"
-              />
+              <div class="img-wrapper">
+                <img
+                  src="assets/imgs/content/cards/Project Gyaanshala.jpg"
+                  alt=""
+                  style="max-height: 300px; object-fit: cover"
+                />
+                <div class="overlay">
+                  <div class="overlay-infos">
+                    <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -533,26 +497,20 @@
             <div class="card-text d-sm-flex align-items-center">
               <ul>
                 <li>
-                  <h6 class="subtitle">
-                    <a href="creativity.html#piano">Piano:</a>
-                  </h6>
+                  <a href="creativity.html#piano">Piano:</a>
                   <p>
                     Level 5 Trinity Certified, Explore my soulful, quirky, and
                     captivating compositions
                   </p>
                 </li>
                 <li>
-                  <h6 class="subtitle">
-                    <a href="creativity.html#dancing-and-film"
-                      >Dance and Filmmaking:</a
-                    >
-                  </h6>
+                  <a href="creativity.html#dancing-and-film"
+                    >Dance and Filmmaking:</a
+                  >
                   <p>Learning the power of self expression and storytelling.</p>
                 </li>
                 <li>
-                  <h6 class="subtitle">
-                    <a href="creativity.html#reading">Avid reader:</a>
-                  </h6>
+                  <a href="creativity.html#reading">Avid reader:</a>
                   <p>
                     My love for reading just grew over time as I tried different
                     genres.
@@ -560,11 +518,14 @@
                 </li>
               </ul>
 
-              <img
-                src="assets/imgs/content/interests/Level 5.jpeg"
-                alt=""
-                style="max-width: 200px; object-fit: cover"
-              />
+              <div class="img-wrapper" style="max-width: 200px">
+                <img src="assets/imgs/content/cards/Creativity.jpg" alt="" />
+                <div class="overlay">
+                  <div class="overlay-infos">
+                    <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -583,181 +544,19 @@
                 </li>
               </ul>
 
-              <img
-                src="assets/imgs/content/adventures/I Fly - Dubai -2017.jpg"
-                alt=""
-                style="max-width: 200px; object-fit: cover"
-              />
+              <div class="img-wrapper" style="max-width: 300px">
+                <img src="assets/imgs/content/cards/Sports.JPG" alt="" />
+                <div class="overlay">
+                  <div class="overlay-infos">
+                    <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- About section -->
-    <!-- <section id="about" class="section mt-3">
-      <div class="container mt-5 text-center">
-        <h6 class="section-title">Getting to know Me!</h6>
-        <h6 class="subtitle mb-4">
-          A Journey of Passion, Purpose, and Potential
-        </h6>
-        <div class="pl-md-4">
-          <img
-            src="assets/imgs/content/About Me.jpg"
-            alt=""
-            class="img-thumbnail mb-2 mr-3 float-left"
-          />
-          <div>
-            <p class="text-justify">
-              Hi! Welcome to my page. Here is the journey of my experiences that
-              have shaped me into who I am today.
-            </p>
-            <p class="text-justify">
-              Following Steve Jobs' philosophy, I've always been passionate
-              about pursuing my interests rather than conforming to prescribed
-              courses. After having studied ICSE till Grade 10, I moved to the
-              IB curriculum where I could explore and pursue my interests in the
-              disciplines of economics, business, math, and physics. Through
-              <a href="co-curricular.html#management">Early Steps Academy</a>, I
-              completed a Seven Level Global Certification Programme, which
-              opened my doors to the core concepts of Digital Technology,
-              Entrepreneurship, Personal Finance and Crypto that fueled my
-              ambition to explore these areas further. Furthermore, through a
-              project based approach at a summer camp on Python and AI at IIT
-              Delhi, I took my first step towards understanding analytical,
-              logical and algorithmic thinking which I believe is pertinent to
-              thrive in the tech-driven world of tomorrow.
-            </p>
-            <p class="text-justify">
-              <a href="passion-project.html">Digital Quest</a>, my passion
-              project, is an initiative to enable digital inclusion to those
-              deprived. Through a series of Charity Badminton Tournaments and E-
-              Waste Drives in the city, I have been able to take some steps in
-              setting up a Computer Center for young children in the village of
-              Nadiad (Gujarat) in collaboration with Tresna Foundation,
-              Ahmedabad. Constant efforts are underway to sustain the
-              functioning of this center to help these children excel their
-              digital skills.
-            </p>
-            <p class="text-justify">
-              Being passionate about working in areas focusing digital literacy,
-              teenage well-being, and body positivity, I was chosen for the
-              Counter Speech Fellowship program of the
-              <a href="community-service.html#ylac"
-                >Young Leaders for Active Citizenship (YLAC)</a
-              >
-              in collaboration with Instagram, where I had the opportunity to
-              contribute meaningfully to these causes along with a likeminded
-              cohort.
-            </p>
-            <p class="text-justify">
-              Leading
-              <a href="community-service.html#project-gyaanshala"
-                >Project Gyaanshala</a
-              >, I worked with my friends to build and refurbish a school at a
-              site for the children of the construction workers and also helped
-              them build foundations of basic education. This experience
-              instilled in me a deep sense of empathy and the desire to give
-              back to society.
-            </p>
-            <p class="text-justify">
-              <a href="special-interests.html">Music</a> is my absolute passion,
-              and I've been playing the piano for 8 years and have secured Merit
-              positions at the Trinity exams up to Level 5! A
-              <a href="sports-and-adventure.html">sports enthusiast</a>, an avid
-              reader, a dancer and a movie lover - I believe there's nothing
-              like losing yourself in a good book or immersing yourself in a
-              great film.
-            </p>
-            <p class="text-justify">
-              As I look ahead, my aspirations lie in diving deeper into studying
-              business analytics and understanding how technology and data can
-              help me achieve personal, professional, and societal goals. If any
-              of this resonates with you, I'd love to connect and share more
-              about our common interests and passions. Thanks for visiting!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End of about section -->
-
-    <!-- Archive section -->
-    <!-- <section id="archive" class="archive section pt-0">
-      <div class="container-fluid text-center">
-        <h6 class="section-title mb-4">Archive</h6>
-        <div class="row justify-content-center">
-          <div class="col-sm-4 col-md-2 mb-4">
-            <div class="custom-card card border">
-              <a href="co-curricular.html">
-                <div class="card-body">
-                  <div>
-                    <i class="icon ti-cup"></i>
-                    <h5>Co - Curricular</h5>
-                  </div>
-                  <p class="text-muted">
-                    Making an Impact Outside the Classroom
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-2 mb-4">
-            <div class="custom-card card border">
-              <a href="passion-project.html">
-                <div class="card-body px-3">
-                  <div>
-                    <i class="icon fas fa-star fa-sm"></i>
-                    <h5>Passion Project</h5>
-                  </div>
-                  <p class="text-muted">Digital Inclusion</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-2 mb-4">
-            <div class="custom-card card border">
-              <a href="community-service.html">
-                <div class="card-body px-3">
-                  <div>
-                    <i class="icon ti-link"></i>
-                    <h5>Community Service</h5>
-                  </div>
-                  <p class="text-muted">Volunteering and Giving Back</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-2 mb-4">
-            <div class="custom-card card border">
-              <a href="sports-and-adventure.html">
-                <div class="card-body px-3">
-                  <div>
-                    <i class="icon ti-basketball"></i>
-                    <h5>Sports and Adventure</h5>
-                  </div>
-                  <p class="text-muted">Embracing the Athlete Within</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-2 mb-4">
-            <div class="custom-card card border">
-              <a href="special-interests.html">
-                <div class="card-body px-3">
-                  <div>
-                    <i class="icon ti-wand"></i>
-                    <h5>Special Interests</h5>
-                  </div>
-                  <p class="text-muted">Expressing My Creative Side</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End of archive section -->
 
     <!-- Testimonials section-->
     <section class="my-3 my-sm-5 pt-2" id="testimonials">
@@ -890,725 +689,9 @@
     </section>
     <!-- End of testimonails section -->
 
-    <div class="page-bg"></div>
-
-    <!-- Service section -->
-    <!-- <section id="interests" class="section">
-      <div class="container text-center">
-        <h6 class="subtitle">Interests</h6>
-        <h6 class="section-title mb-4">What I Like</h6>
-        <p class="mb-5 pb-4">
-          My streaks of special interests include a variety of academic
-          competitions, fellowships, and religious interests. My participation
-          and certification in ‘Early Step Competitions’ by Harvard, crack the
-          case competition, and CSF Fellowships helped me get academic
-          expertise. <br />I am also a devoted practitioner of Jainism and my
-          participation in Jain Vidya helped me develop an inner depth of being.
-          I am also deeply passionate about adventures like sky diving, rock
-          climbing, river rafting, zip lining and snow rolling. This keeps me
-          lively and high-spirited.
-        </p>
-
-        <div class="row">
-          <div class="col-sm-6 col-md-3 mb-4">
-            <div class="custom-card card border">
-              <div class="card-body px-3">
-                <i class="icon ti-book"></i>
-                <h5>Academic Competitions</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 mb-4">
-            <div class="custom-card card border">
-              <div class="card-body">
-                <i class="icon ti-map-alt"></i>
-                <h5>Adventure</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 mb-4">
-            <div class="custom-card card border">
-              <div class="card-body">
-                <i class="icon ti-basketball"></i>
-                <h5>Sports</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 mb-4">
-            <div class="custom-card card border">
-              <div class="card-body">
-                <i class="icon ti-face-smile"></i>
-                <h5>Volunteering</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End of Sectoin -->
-
-    <!-- Community Contribution section -->
-    <!-- <section id="community-contribution" class="section">
-      <div class="container text-center">
-        <h6 class="subtitle">Community Contribution</h6>
-        <h6 class="section-title mb-4">Check My Community Contribution</h6>
-        <p class="mb-5 pb-4">
-          Contributing and giving back to the community has always given me a
-          sense of purpose and direction. It helps me connect to real-life
-          problems, develop empathy, and understanding, and become aware
-          citizens. <br />
-          With my initiative, Project Gyaanshala, we raised funds for the
-          building of a school and I was actively involved in the
-          conceptualization, leading the project, identifying the place,
-          refurbishing, and the whole journey. It ignited a sense of leadership,
-          righteousness, and management in me. This project helped
-          underprivileged children, children of construction workers to have a
-          chance at a decent and meaningful life. This directed my attention
-          toward a purpose higher than self, watching them smile and be hopeful
-          made me determined to help people. <br />
-          My ‘digital quest’ project was a life-changing experience where I tied
-          up with a foundation and worked on imparting and providing digital
-          literacy where I facilitated and lead the process which was followed
-          by a drive for digital waste. It made me understand real-life issues
-          and hence do my part in contributing to problem-solving. It morphed me
-          into a conscious citizen and hence see the bigger picture clearly and
-          develop my independent opinions.
-        </p>
-
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/3.Bricklaying.jpeg"
-                alt="Brick Laying"
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <h5>Brick Laying</h5>
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                  <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="img-wrapper">
-              <img src="assets/imgs/content/8.jpeg" alt="" />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <h5>Giving back to the community</h5>
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                  <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="img-wrapper">
-              <img src="assets/imgs/content/10.jpeg" alt="" />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <h5>Giving back to the community</h5>
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                  <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="img-wrapper">
-              <img src="assets/imgs/content/12.jpeg" alt="" />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <h5>Giving back to the community</h5>
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                  <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/Project Gyaan Shaala - Charity Flyer.png"
-                alt="Project Gyaan Shaala"
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <h5>Project Gyaan Shaala</h5>
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="img-wrapper">
-              <video width="320" height="240" controls>
-                <source
-                  src="assets/imgs/content/2022- Voluntee for Promoting Sustainable Development.mp4"
-                />
-              </video>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End of community Contribution section -->
-
-    <!-- Achievements Section -->
-    <!-- <section id="achievements" class="section">
-      <div class="container text-center">
-        <h6 class="subtitle">Achievements</h6>
-        <h6 class="section-title mb-4">Some of My Sports Achievements</h6>
-        <p class="mb-5 pb-4">
-          As Ann Meyers quoted, “Somebody gives you an opportunity, say yes to
-          it. So what if you fail? you won’t know if you fail or succeed unless
-          you try.” <br /><br />
-          This has been one of the most crucial quotes and learning I have lived
-          through since I was a child. My need to explore new sports and my ‘go,
-          get it’ attitude aided me in excelling at a variety of sports. <br />
-          While being a major part of winning teams and holding medals for
-          various sports like sprint, long jump, relay, hurdles, football,
-          kabaddi, and badminton, I learned relentlessness and resilience.
-          Throughout my journey with sports, I have imbibed a sense of
-          righteousness, sportsmanship, and the ability to push through even
-          when it seems difficult. This has molded me into a thriving individual
-          with a desire to persevere.
-        </p>
-
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/2019- Captain Winning of Kho - Kho Team.JPG"
-                alt="2019- Captain Winning of Kho - Kho Team"
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <h5>2019 - Captain of Winning Kho-Kho Team</h5>
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                  <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/1. 2018-Long Jump - Silver.JPG"
-                alt=""
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <h5>2018 - Silver Medal in Long Jump</h5>
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                  <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="img-wrapper">
-              <img src="assets/imgs/content/1. Season 1.jpg" alt="" />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <h5>2022 - Charity Badminton Tournament Season 1</h5>
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                  <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/1c. 2017 -Kabaddi Winner.JPG"
-                alt=""
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <h5>2017 - Kabaddi Winner</h5>
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                  <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="img-wrapper">
-              <img src="assets/imgs/content/8. Season 1.jpg" alt="" />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <h5>Badminton Winner</h5>
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/2a. 2021- State Level Football-  Winner.jpeg"
-                alt=""
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <h5>2021 - State Leval Football Winner</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End of Achievement Section -->
-
-    <!-- Hobbies Section -->
-    <!-- <section id="hobbies" class="section">
-      <div class="container text-center">
-        <h6 class="subtitle">Hobbies</h6>
-        <h6 class="section-title mb-4">What I Enjoy Doing</h6>
-        <p class="mb-5 pb-4">
-          Performative art and fine art have been an active part of me which
-          provides a sense of comfort, inspiration, and enlightenment. As a
-          Music enthusiast and a position holder in Trinity, the piano has
-          always been my go-to comfort and peace. <br />
-          The art of expressing and portraying different characters always
-          grabbed my attention after my short film, justice in jeopardy, and
-          while taking part in dance competitions throughout my school events.
-          This has expanded my perspective on life and humans and has increased
-          my emotional intelligence and helped my feel rather than see.
-        </p>
-
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/Rafting - Bali - 2016.jpg"
-                alt="Rafting"
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <h5>2016 - Rafting in Bali</h5>
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                  <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/River Rafting - Hrishikesh- 2022.jpeg"
-                alt=""
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <h5>2022 - River Rafting in Hrishikesh</h5>
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                  <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="img-wrapper">
-              <img src="assets/imgs/content/Sky Diving - 2018 (1).JPG" alt="" />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <h5>2018 - Sky Diving</h5>
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                  <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/Sky Diving- South Africa -2018.jpg"
-                alt=""
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <h5>2018 - Sky Diving in South Africa</h5>
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                  <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="img-wrapper">
-              <img
-                src="assets/imgs/content/ZIp Line - Mussorie -2022.jpeg"
-                alt="Zip line"
-              />
-              <div class="overlay">
-                <div class="overlay-infos">
-                  <h5>2022 - ZipLining in Mussorie</h5>
-                  <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="img-wrapper">
-              <video
-                src="assets/imgs/content/In Too Deep.mp4"
-                width="=320"
-                height="240"
-                controls
-              ></video>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End of Hobbies Section -->
-
-    <!-- Skills section -->
-    <!-- <section class="section">
-      <div class="container text-center">
-        <h6 class="subtitle">Skills</h6>
-        <h6 class="section-title mb-4">Why Choose me</h6>
-        <p class="mb-5 pb-4">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias
-          dignissimos. <br />
-          rerum commodi corrupti, temporibus non quam.
-        </p>
-
-        <div class="row text-left">
-          <div class="col-sm-6">
-            <h6 class="mb-3">Photoshop</h6>
-            <div class="progress">
-              <div
-                class="progress-bar bg-primary"
-                role="progressbar"
-                style="width: 89%"
-                aria-valuenow="25"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <span>89%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <h6 class="mb-3">Web Design</h6>
-            <div class="progress">
-              <div
-                class="progress-bar bg-primary"
-                role="progressbar"
-                style="width: 83%"
-                aria-valuenow="25"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <span>83%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <h6 class="mb-3">App Design</h6>
-            <div class="progress">
-              <div
-                class="progress-bar bg-primary"
-                role="progressbar"
-                style="width: 95%"
-                aria-valuenow="25"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <span>95%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <h6 class="mb-3">SEO</h6>
-            <div class="progress">
-              <div
-                class="progress-bar bg-primary"
-                role="progressbar"
-                style="width: 90%"
-                aria-valuenow="25"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <span>90%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End of Skills sections -->
-
-    <!-- Testmonial Section -->
-    <!-- <section id="testmonial" class="section">
-      <div class="container text-center">
-        <h6 class="subtitle">Testmonial</h6>
-        <h6 class="section-title mb-4">What People Say About Me</h6>
-        <p class="mb-5 pb-4">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias
-          dignissimos. <br />
-          rerum commodi corrupti, temporibus non quam.
-        </p>
-
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card testmonial-card border">
-                <div class="card-body">
-                  <img src="assets/imgs/avatar-1.jpg" alt="" />
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Magnam nostrum voluptates in enim vel amet?
-                  </p>
-                  <h1 class="title">Emma Re</h1>
-                  <h1 class="subtitle">Graphic Designer</h1>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card testmonial-card border">
-                <div class="card-body">
-                  <img src="assets/imgs/avatar-2.jpg" alt="" />
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Magnam nostrum voluptates in enim vel amet?
-                  </p>
-                  <h1 class="title">James Bert</h1>
-                  <h1 class="subtitle">Web Designer</h1>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card testmonial-card border">
-                <div class="card-body">
-                  <img src="assets/imgs/avatar-3.jpg" alt="" />
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Magnam nostrum voluptates in enim vel amet?
-                  </p>
-                  <h1 class="title">Michael Abra</h1>
-                  <h1 class="subtitle">Web Developer</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End of testmonial section -->
-
-    <!-- Blog Section -->
-    <!-- <section id="blog" class="section">
-      <div class="container text-center">
-        <h6 class="subtitle">My Blogs</h6>
-        <h6 class="section-title mb-4">Latest News</h6>
-        <p class="mb-5 pb-4">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias
-          dignissimos. <br />
-          rerum commodi corrupti, temporibus non quam.
-        </p>
-
-        <div class="row text-left">
-          <div class="col-md-4">
-            <div class="card border mb-4">
-              <img
-                src="assets/imgs/blog-1.jpg"
-                alt=""
-                class="card-img-top w-100"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Designe for Everyone</h5>
-                <div class="post-details">
-                  <a href="javascript:void(0)">Posted By: Admin</a>
-                  <a href="javascript:void(0)"
-                    ><i class="ti-thumb-up"></i> 456</a
-                  >
-                  <a href="javascript:void(0)"
-                    ><i class="ti-comment"></i> 123</a
-                  >
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
-                  ad vel dolorum, iusto velit, minima? Voluptas nemo harum
-                  impedit nisi.
-                </p>
-                <a href="javascript:void(0)">Read More..</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card border mb-4">
-              <img
-                src="assets/imgs/blog-2.jpg"
-                alt=""
-                class="card-img-top w-100"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Web Layouts</h5>
-                <div class="post-details">
-                  <a href="javascript:void(0)">Posted By: Admin</a>
-                  <a href="javascript:void(0)"
-                    ><i class="ti-thumb-up"></i> 456</a
-                  >
-                  <a href="javascript:void(0)"
-                    ><i class="ti-comment"></i> 123</a
-                  >
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
-                  ad vel dolorum, iusto velit, minima? Voluptas nemo harum
-                  impedit nisi.
-                </p>
-                <a href="javascript:void(0)">Read More..</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card border mb-4">
-              <img
-                src="assets/imgs/blog-3.jpg"
-                alt=""
-                class="card-img-top w-100"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Bootstrap Framework</h5>
-                <div class="post-details">
-                  <a href="javascript:void(0)">Posted By: Admin</a>
-                  <a href="javascript:void(0)"
-                    ><i class="ti-thumb-up"></i> 456</a
-                  >
-                  <a href="javascript:void(0)"
-                    ><i class="ti-comment"></i> 123</a
-                  >
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
-                  ad vel dolorum, iusto velit, minima? Voluptas nemo harum
-                  impedit nisi.
-                </p>
-                <a href="javascript:void(0)">Read More..</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Hire me section -->
-    <!-- <section class="bg-gray p-0 section">
-      <div class="container">
-        <div class="card bg-primary">
-          <div class="card-body text-light">
-            <div class="row align-items-center">
-              <div class="col-sm-9 text-center text-sm-left">
-                <h5 class="mt-3">Hire Me For Your Project</h5>
-                <p class="mb-3">
-                  Accusantium labore nostrum similique quisquam.
-                </p>
-              </div>
-              <div class="col-sm-3 text-center text-sm-right">
-                <button class="btn btn-light rounded">Hire Me!</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End od Hire me section. -->
-
-    <!-- Contact Section -->
-    <!-- <section id="contact" class="position-relative section">
-      <div class="container text-center">
-        <h6 class="subtitle">Contact</h6>
-        <h6 class="section-title mb-4">Get In Touch With Me</h6>
-        <p class="mb-5 pb-4">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias
-          dignissimos. <br />
-          rerum commodi corrupti, temporibus non quam.
-        </p>
-
-        <div class="contact text-left">
-          <div class="form">
-            <h6 class="subtitle">Available 24/7</h6>
-            <h6 class="section-title mb-4">Get In Touch</h6>
-            <form>
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name-input"
-                  aria-describedby="nameHelp"
-                  placeholder="Enter Name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="subject-input"
-                  placeholder="Subject"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  name="contact-message"
-                  id=""
-                  cols="30"
-                  rows="5"
-                  class="form-control"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="btn btn-primary btn-block rounded w-lg"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-          <div class="contact-infos">
-            <div class="item">
-              <i class="ti-location-pin"></i>
-              <div class="">
-                <h5>Location</h5>
-                <p>12345 Fake ST NoWhere AB Country</p>
-              </div>
-            </div> -->
-    <!-- <div class="item">
-              <i class="ti-mobile"></i>
-              <div>
-                <h5>Phone Number</h5>
-                <p>(123) 456-7890</p>
-              </div>
-            </div>
-            <div class="item">
-              <i class="ti-email"></i>
-              <div class="mb-0">
-                <h5>Email Address</h5>
-                <p>info@website.com</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="map">
-        <iframe src="https://snazzymaps.com/embed/61257"></iframe>
-      </div>
-    </section> -->
-    <!-- End of Contact Section -->
+    <div id="fullpage" onclick="removeImage()">
+      <img src="" alt="" />
+    </div>
 
     <!-- Page Footer -->
     <footer class="page-footer" id="footer">
@@ -1654,33 +737,56 @@
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
     <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-    <!-- Animate on Scroll -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!-- steller js -->
     <script src="assets/js/steller.js"></script>
 
     <script>
-      AOS.init({
-        // Global settings:
-        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
-        initClassName: "aos-init", // class applied after initialization
-        animatedClassName: "aos-animate", // class applied on animation
-        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+      const imgs = document.querySelectorAll(".img-wrapper img");
+      const zoomIcons = document.querySelectorAll(".overlay-infos");
+      const fullPage = document.querySelector("#fullpage");
+      const fullPageImg = document.querySelector("#fullpage img");
 
-        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        offset: 80, // offset (in px) from the original trigger point
-        delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 600, // values from 0 to 3000, with step 50ms
-        easing: "ease", // default easing for AOS animations
-        once: false, // whether animation should happen only once - while scrolling down
-        mirror: false, // whether elements should animate out while scrolling past them
-        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      zoomIcons.forEach((div) => {
+        div.addEventListener("click", (e) => {
+          // window.scrollTo(0, 0);
+          // document.body.style.height = "100vh";
+          // document.body.style.overflow = "hidden";
+
+          let imgElement;
+
+          if (e.target.tagName == "A") {
+            imgElement =
+              e.target.parentElement.parentElement.previousSibling
+                .previousSibling;
+          } else {
+            imgElement =
+              e.target.parentElement.parentElement.parentElement.previousSibling
+                .previousSibling;
+          }
+
+          const src = imgElement.src;
+
+          scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          fullPageImg.src = src;
+          fullPage.style.top = scrollTop + "px";
+          fullPage.style.display = "flex";
+
+          // if any scroll is attempted,
+          // set this to the previous value
+          window.onscroll = function () {
+            window.scrollTo(0, scrollTop);
+          };
+        });
       });
+
+      const removeImage = () => {
+        window.onscroll = function () {};
+        fullPage.style.display = "none";
+        fullPageImg.src = "";
+        // document.body.style.height = "100%";
+        // document.body.style.overflow = "scroll";
+      };
     </script>
   </body>
 </html>

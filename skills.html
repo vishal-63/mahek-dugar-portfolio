@@ -15,15 +15,14 @@
     />
     <link rel="shortcut icon" href="assets/imgs/logo.svg" type="image/x-icon" />
     <!-- Bootstrap + Steller main styles -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="assets/css/steller.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="80" id="home">
     <!-- Page Navigation -->
     <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top"
+      class="navbar navbar-expand-lg navbar-light fixed-top secondary"
       data-spy="affix"
       data-offset-top="80"
     >
@@ -43,7 +42,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          class="collapse navbar-collapse mb-3 mb-sm-0"
+          id="navbarSupportedContent"
+        >
           <ul class="navbar-nav ml-auto align-items-center">
             <li class="nav-item">
               <a class="nav-link" href="co-curricular.html">Co-Curricular</a>
@@ -79,8 +81,8 @@
     <!-- End of Page Navigation -->
 
     <!-- Coding -->
-    <section id="coding" class="section">
-      <div class="container py-3 py-sm-4 text-center">
+    <section id="coding" class="section first">
+      <div class="container pt-3 pt-sm-4 text-center">
         <h5 class="section-title text-center mb-3 mb-sm-5">Coding</h5>
         <div class="row align-items-center mb-3">
           <p class="text-left col-12 col-sm-7">
@@ -141,16 +143,13 @@
               </li>
             </ul>
           </div>
-          <section
-            id="carousel"
-            class="col-sm-5 carousel"
-            style="height: 325px"
-          >
+          <section id="carousel" class="col-sm-5" style="height: 425px">
             <div class="container h-100 w-100">
               <div
                 id="carousel-indicators"
                 class="carousel slide h-100 w-100"
                 data-ride="carousel"
+                data-interval="2000"
               >
                 <ol class="carousel-indicators" style="bottom: 0">
                   <li
@@ -260,57 +259,49 @@
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
     <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-    <!-- Animate on Scroll -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!-- steller js -->
     <script src="assets/js/steller.js"></script>
 
     <script>
-      AOS.init({
-        // Global settings:
-        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
-        initClassName: "aos-init", // class applied after initialization
-        animatedClassName: "aos-animate", // class applied on animation
-        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        offset: 80, // offset (in px) from the original trigger point
-        delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 600, // values from 0 to 3000, with step 50ms
-        easing: "ease", // default easing for AOS animations
-        once: false, // whether animation should happen only once - while scrolling down
-        mirror: false, // whether elements should animate out while scrolling past them
-        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
-      });
-
       const imgs = document.querySelectorAll(".img-wrapper img");
-      const zoomIcons = document.querySelectorAll(".overlay-infos a");
+      const zoomIcons = document.querySelectorAll(".overlay-infos");
       const fullPage = document.querySelector("#fullpage");
       const fullPageImg = document.querySelector("#fullpage img");
 
       zoomIcons.forEach((div) => {
         div.addEventListener("click", (e) => {
-          window.scrollTo(0, 0);
-          document.body.style.height = "100vh";
-          document.body.style.overflow = "hidden";
-          const src =
-            e.target.parentElement.parentElement.parentElement.previousSibling
-              .previousSibling.src;
+          let imgElement;
+
+          if (e.target.tagName == "A") {
+            imgElement =
+              e.target.parentElement.parentElement.previousSibling
+                .previousSibling;
+          } else {
+            imgElement =
+              e.target.parentElement.parentElement.parentElement.previousSibling
+                .previousSibling;
+          }
+
+          const src = imgElement.src;
+
+          scrollTop = window.pageYOffset || document.documentElement.scrollTop;
           fullPageImg.src = src;
+          fullPage.style.top = scrollTop + "px";
           fullPage.style.display = "flex";
+
+          // if any scroll is attempted,
+          // set this to the previous value
+          window.onscroll = function () {
+            window.scrollTo(0, scrollTop);
+          };
         });
       });
 
       const removeImage = () => {
+        window.onscroll = function () {};
         fullPage.style.display = "none";
         fullPageImg.src = "";
-        document.body.style.height = "100%";
-        document.body.style.overflow = "scroll";
       };
     </script>
   </body>

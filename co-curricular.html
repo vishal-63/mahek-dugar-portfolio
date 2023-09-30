@@ -15,15 +15,14 @@
     />
     <link rel="shortcut icon" href="assets/imgs/logo.svg" type="image/x-icon" />
     <!-- Bootstrap + Steller main styles -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="assets/css/steller.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="80" id="home">
     <!-- Page Navigation -->
     <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top"
+      class="navbar navbar-expand-lg navbar-light fixed-top secondary"
       data-spy="affix"
       data-offset-top="80"
     >
@@ -43,7 +42,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          class="collapse navbar-collapse mb-3 mb-sm-0"
+          id="navbarSupportedContent"
+        >
           <ul class="navbar-nav ml-auto align-items-center">
             <li class="nav-item">
               <a class="nav-link" href="#">Co-Curricular</a>
@@ -63,36 +65,6 @@
             <li class="nav-item">
               <a class="nav-link" href="sports-and-adventure.html">Sports</a>
             </li>
-            <!-- <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Archive
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="co-curricular.html"
-                  >Co-Curricular</a
-                >
-                <a class="dropdown-item" href="community-service.html"
-                  >Community Service</a
-                >
-                <a class="dropdown-item" href="passion-project.html"
-                  >Passion Project</a
-                >
-                <a class="dropdown-item" href="sports-and-adventure.html"
-                  >Sports and Adventure</a
-                >
-                <a class="dropdown-item" href="special-interests.html"
-                  >Special Interests</a
-                >
-              </div>
-            </li> -->
 
             <li class="nav-item">
               <a
@@ -109,13 +81,13 @@
     <!-- End of Page Navigation -->
 
     <!-- Case Study -->
-    <section id="case-study" class="section">
-      <div class="container py-3 py-sm-4 text-center">
+    <section id="case-study" class="section first">
+      <div class="container pt-3 pt-sm-4 text-center">
         <h5 class="section-title text-center mb-3 mb-sm-5">
           Case Study Method of Learning
         </h5>
         <div class="row align-items-center mb-3">
-          <p class="text-left col-12 col-sm-7">
+          <p class="text-left col-sm-7">
             At Early Steps Academy (founded by a Harvard alum), I completed the
             7-Level Global Certification exploring diverse topics such as Global
             Awareness, Entrepreneurship, 21st-Century Skills, Finance, Global
@@ -129,100 +101,17 @@
             advancements and also developed my critical thinking and
             communication skills.
           </p>
-          <section
-            id="carousel"
-            class="col-12 col-sm-5 carousel"
-            style="height: 325px"
-          >
-            <div class="container h-100 w-100">
-              <div
-                id="carousel-indicators"
-                class="carousel slide h-100 w-100"
-                data-ride="carousel"
-              >
-                <ol class="carousel-indicators" style="bottom: 0">
-                  <li
-                    data-target="#carousel-indicators"
-                    data-slide-to="0"
-                    class="active"
-                  ></li>
-                  <li data-target="#carousel-indicators" data-slide-to="1"></li>
-                  <li data-target="#carousel-indicators" data-slide-to="2"></li>
-                  <li data-target="#carousel-indicators" data-slide-to="3"></li>
-                  <li data-target="#carousel-indicators" data-slide-to="4"></li>
-                  <li data-target="#carousel-indicators" data-slide-to="5"></li>
-                </ol>
-                <div class="carousel-inner h-100 w-100">
-                  <div class="carousel-item h-100 w-100 active">
-                    <img
-                      class="d-block h-100 mx-auto carousel-image"
-                      src="assets/imgs/content/co-curricular/1. Level 1-Global Awareness and Current Affairs.jpg"
-                    />
-                  </div>
-                  <div class="carousel-item h-100 w-100">
-                    <img
-                      class="d-block h-100 mx-auto carousel-image"
-                      src="assets/imgs/content/co-curricular/2. Level 2- Entreprenurship.jpg"
-                    />
-                  </div>
-                  <div class="carousel-item h-100 w-100">
-                    <img
-                      class="d-block h-100 mx-auto carousel-image"
-                      src="assets/imgs/content/co-curricular/3.  Level 3- Technology and Innovation_pages-to-jpg-0001.jpg"
-                    />
-                  </div>
-                  <div class="carousel-item h-100 w-100">
-                    <img
-                      class="d-block h-100 mx-auto carousel-image"
-                      src="assets/imgs/content/co-curricular/4. Level 4 - 21st Century Life Skills_pages-to-jpg-0001.jpg"
-                    />
-                  </div>
-                  <div class="carousel-item h-100 w-100">
-                    <img
-                      class="d-block h-100 mx-auto carousel-image"
-                      src="assets/imgs/content/co-curricular/5. Level 5- Basics in Finance and Economics_pages-to-jpg-0001.jpg"
-                    />
-                  </div>
-                  <div class="carousel-item h-100 w-100">
-                    <img
-                      class="d-block h-100 mx-auto carousel-image"
-                      src="assets/imgs/content/co-curricular/6. Level 6- Global History.jpg"
-                    />
-                  </div>
-                </div>
-                <a
-                  class="carousel-control-prev"
-                  href="#carousel-indicators"
-                  role="button"
-                  data-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a
-                  class="carousel-control-next"
-                  href="#carousel-indicators"
-                  role="button"
-                  data-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-          </section>
+          <div class="col-sm-5">
+            <h6>
+              Snippets from a session- ‘Space Tourism and Colonization of Mars’
+            </h6>
+            <video height="300" controls>
+              <source
+                src="assets/imgs/content/co-curricular/1. Space Tourism and Colonization of Mars _ Impromptu speech challenge _ Early Steps Academy.mp4"
+              />
+            </video>
+          </div>
         </div>
-        <video width="720" height="480" controls>
-          <source
-            src="assets/imgs/content/co-curricular/1. Space Tourism and Colonization of Mars _ Impromptu speech challenge _ Early Steps Academy.mp4"
-          />
-        </video>
       </div>
     </section>
 
@@ -232,19 +121,24 @@
         <h5 class="section-title text-center mb-3 mb-sm-5">Research</h5>
         <div class="d-flex align-items-center">
           <p class="text-left">
-            It was a privilege to work as a Research Scholar under the
-            mentorship of Prof. Vinodh Madhavan, Assistant Professor Finance,
-            Ahmedabad University. I could immerse myself in getting hands-on
-            training in academic writing, excel skills, questionnaire designing,
-            data handling and implementation of statistical testing tools.
+            It was a privilege to work as a
+            <strong>Research Scholar</strong> under the mentorship of Prof.
+            Vinodh Madhavan, Assistant Professor Finance, Ahmedabad University.
+            I could immerse myself in getting hands-on training in academic
+            writing, excel skills, questionnaire designing, data handling and
+            implementation of statistical testing tools.
             <br />
             <br />
-            Glad to have been able to publish my research titled ‘Is Gen Z in
-            India Moving Towards Financial Independence?- A Study of Their
-            Investment Preferences’ (2023) in the Journal of Student Research,
-            High School Edition,12 (2).
-            <a href="https://doi.org/10.47611/jsrhs.v12i2.4446"
-              >Read the paper here.</a
+            Glad to have been able to publish my research titled
+            <strong
+              >‘Is Gen Z in India Moving Towards Financial Independence?</strong
+            >
+            - A Study of Their Investment Preferences’ (2023) in the Journal of
+            Student Research, High School Edition,12 (2).
+            <strong
+              ><a href="https://doi.org/10.47611/jsrhs.v12i2.4446"
+                >Read the paper here.</a
+              ></strong
             >
           </p>
         </div>
@@ -490,500 +384,6 @@
       </div>
     </section>
 
-    <!-- Business & Management Related -->
-    <!-- <section id="management" class="section pb-0">
-      <div class="container text-center first position-relative">
-        <h6 class="section-title main-title">Business and Management</h6>
-        <div id="esa" class="section pb-0">
-          <h6 class="title mb-4">Early Steps Academy Global Certification</h6>
-          <div class="row align-items-center">
-            <p
-              class="col-sm-6"
-              data-aos="zoom-in-right"
-              data-aos-mirror="true"
-              data-aos-once="false"
-            >
-              During my time at Early Steps Academy from 2021 to 2023, I had the
-              opportunity to explore diverse topics such as Global Awareness,
-              Entrepreneurship, 21st-Century Skills, Finance, Global History,
-              and Technology Miracles with a global cohort. The engaging
-              pedagogy of analyzing case studies of real life companies like
-              KFC, H&M, Netflix, Amazon, 23andMe helped me gain valuable
-              insights into various business and technological advancements and
-              also developed my critical thinking and communication skills.
-            </p>
-            
-          </div>
-
-          <div class="row align-items-center mt-5">
-            <div
-              class="col-sm-7"
-              data-aos="zoom-in-right"
-              data-aos-mirror="true"
-              data-aos-once="false"
-            >
-              <video width="540" height="360" controls>
-                <source
-                  src="assets/imgs/content/co-curricular/1. Space Tourism and Colonization of Mars _ Impromptu speech challenge _ Early Steps Academy.mp4"
-                />
-              </video>
-            </div>
-            <div
-              class="col-sm-5"
-              data-aos="zoom-in-left"
-              data-aos-mirror="true"
-              data-aos-once="false"
-            >
-              <h6 class="title">
-                Snippets from a session- Space Tourism and Colonization of Mars
-              </h6>
-              <h6 class="subtitle">
-                (Featured on the website of Early Steps Academy)
-              </h6>
-            </div>
-          </div>
-
-          <div class="row align-items-center mt-5">
-            <p
-              class="col-sm-6"
-              data-aos="zoom-in-right"
-              data-aos-mirror="true"
-              data-aos-once="false"
-            >
-              Teaming up with four other talented peers from across the world, I
-              also participated in their Global Crack the Case Competition,
-              securing a position in the top 10 teams with a score of 496/500
-              from over 5,000 teams across 26 countries. Also, winning the Jeff
-              Bezos Global Speech Championship was a proud moment that boosted
-              my confidence. Early Steps Academy connected me with global peers,
-              shaping me into a well-rounded individual prepared for business
-              and management challenges. I am grateful for these opportunities
-              and excited to make a positive impact.
-            </p>
-            <section
-              id="carousel2"
-              class="col-sm-6 carousel"
-              data-aos="zoom-in-left"
-              data-aos-mirror="true"
-              data-aos-once="false"
-            >
-              <div class="container h-100 w-100">
-                <div
-                  id="carousel-indicators-2"
-                  class="carousel slide h-100 w-100"
-                  data-ride="carousel"
-                >
-                  <ol class="carousel-indicators" style="bottom: 0">
-                    <li
-                      data-target="#carousel-indicators-2"
-                      data-slide-to="0"
-                      class="active"
-                    ></li>
-                    <li
-                      data-target="#carousel-indicators-2"
-                      data-slide-to="1"
-                    ></li>
-                    <li
-                      data-target="#carousel-indicators-2"
-                      data-slide-to="2"
-                    ></li>
-                  </ol>
-                  <div class="carousel-inner h-100 w-100">
-                    <div class="carousel-item h-100 w-100 active">
-                      <img
-                        class="d-block h-100 mx-auto carousel-image"
-                        src="assets/imgs/content/co-curricular/1. Global certification - Mahek Dugar_page-0001.jpg"
-                      />
-                    </div>
-                    <div class="carousel-item h-100 w-100">
-                      <img
-                        class="d-block h-100 mx-auto carousel-image"
-                        src="assets/imgs/content/co-curricular/3. 2021-Speech Competition - Winner.jpg"
-                      />
-                    </div>
-                    <div class="carousel-item h-100 w-100">
-                      <img
-                        class="d-block h-100 mx-auto carousel-image"
-                        src="assets/imgs/content/co-curricular/2. Mahek Dugar- Crack the Case_page-0001.jpg"
-                      />
-                    </div>
-                  </div>
-                  <a
-                    class="carousel-control-prev"
-                    href="#carousel-indicators-2"
-                    role="button"
-                    data-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a
-                    class="carousel-control-next"
-                    href="#carousel-indicators-2"
-                    role="button"
-                    data-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-
-        <div id="wharton" class="section pb-0">
-          <div class="text-center">
-            <h6 class="title mb-4">
-              Wharton Global High School Investment Competition
-            </h6>
-            <div class="row align-items-center">
-              <div class="col-sm-5" data-aos="zoom-in-right">
-                <div class="img-wrapper mb-0">
-                  <img
-                    src="assets/imgs/content/co-curricular/Mahek - Wharton Certificate_page-0001 (1).jpg"
-                    alt="Wharton Certificate"
-                  />
-                  <div class="overlay">
-                    <div class="overlay-infos">
-                      <a href="javascript:void(0)"
-                        ><i class="ti-zoom-in"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-7" data-aos="zoom-in-left">
-                <p class="text-left">
-                  Participating in this competition offered me a remarkable
-                  opportunity to explore the realm of equity investmenting. Out
-                  of 1,400 teams representing 53 countries, our team could
-                  successfully advance upto the quarterfinals.
-                  <br />
-                  Throughout the competition, I wholeheartedly immersed myself
-                  in the world of investing, acquiring knowledge in risk
-                  management, diversification, and company analysis. Moreover,
-                  collaborating with teams from various parts of the world
-                  broadened my perspectives.The investing skills I acquired hold
-                  immense value for life, enabling me to make informed
-                  decisions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End of Business & Management Related -->
-
-    <!-- Jain Vidya section -->
-    <!-- <section id="other" class="section pb-0">
-      <div class="container text-center position-relative">
-        <h6 class="section-title main-title">Other Activities</h6>
-        <div id="jainism" class="section pb-0">
-          <h6 class="title mb-4">Principles of Jainism Through Jain Vidya</h6>
-          <div class="row jain-vidya align-items-center">
-            <section
-              id="carousel3"
-              class="col-sm-6 carousel"
-              data-aos="zoom-in-right"
-              data-aos-mirror="true"
-              data-aos-once="false"
-            >
-              <div class="container h-100 w-100">
-                <div
-                  id="carousel-indicators-3"
-                  class="carousel slide w-100 h-100"
-                  data-ride="carousel"
-                >
-                  <ol class="carousel-indicators" style="bottom: 0">
-                    <li
-                      data-target="#carousel-indicators-3"
-                      data-slide-to="0"
-                      class="active"
-                    ></li>
-                    <li
-                      data-target="#carousel-indicators-3"
-                      data-slide-to="1"
-                    ></li>
-                  </ol>
-                  <div class="carousel-inner w-100 h-100">
-                    <div class="carousel-item w-100 h-100 active">
-                      <img
-                        class="d-block w-100 h-100 mx-auto carousel-image"
-                        src="assets/imgs/content/co-curricular/Jain Vidya - Level 1.jpg"
-                      />
-                    </div>
-                    <div class="carousel-item w-100 h-100">
-                      <img
-                        class="d-block w-100 h-100 mx-auto carousel-image"
-                        src="assets/imgs/content/co-curricular/Jain Vidya- Level 2.jpeg"
-                      />
-                    </div>
-                  </div>
-                  <a
-                    class="carousel-control-prev"
-                    href="#carousel-indicators-3"
-                    role="button"
-                    data-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a
-                    class="carousel-control-next"
-                    href="#carousel-indicators-3"
-                    role="button"
-                    data-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
-            </section>
-            <div class="col-sm-6" data-aos="zoom-in-left">
-              <p class="text-left">
-                Being a Jain , from a young age, I began my journey into Jain
-                Vidya, the philosophy of Jainism. It felt natural for me to stay
-                connected to my roots and culture. Jain Vidya has become a
-                crucial part of my life, shaping my beliefs and guiding my
-                actions. It gives me purpose and direction, teaching me to
-                respect and value all living beings through non-violence
-                (ahimsa). I have completed two levels so far, and each one has
-                expanded my knowledge and understanding in profound ways.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div id="coding-camps" class="section pb-0">
-          <h6 class="title mb-4">Coding Camps</h6>
-          <div class="row align-items-center">
-            <div class="col-sm-7" data-aos="zoom-in-right">
-              <p class="text-left">
-                Being a Jain , from a young age, I began my journey into Jain
-                Vidya, the philosophy of Jainism. It felt natural for me to stay
-                connected to my roots and culture. Jain Vidya has become a
-                crucial part of my life, shaping my beliefs and guiding my
-                actions. It gives me purpose and direction, teaching me to
-                respect and value all living beings through non-violence
-                (ahimsa). I have completed two levels so far, and each one has
-                expanded my knowledge and understanding in profound ways.
-              </p>
-            </div>
-            <div class="col-sm-5" data-aos="zoom-in-left">
-              <div class="img-wrapper">
-                <img
-                  src="assets/imgs/content/co-curricular/AI Camp Certificate.jpg"
-                  alt="AI Camp Certificate"
-                />
-                <div class="overlay">
-                  <div class="overlay-infos">
-                    <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="olympiads" class="section pb-0">
-          <h6 class="title mb-4">Olympiads & MUNs</h6>
-          <p
-            class="mb-5 pb-4"
-            data-aos="zoom-in"
-            data-aos-mirror="true"
-            data-aos-once="false"
-          >
-            In my pursuit of knowledge and personal growth, I have
-            enthusiastically participated in MUN’s various Olympiads. It all
-            began with the Anand Niketan Model UN 3rd Edition, where I
-            represented South Africa at the United Nations Office of Drugs and
-            Crime in 2019.
-            <br />
-            <br />
-            Additionally, I achieved recognition by qualifying for the ASSET
-            Talent Search as part of the top 5% of students who appeared for
-            ASSET 2019. At the SOF-International English Olympiad in 2021, I
-            secured the 25th Zonal Rank and was awarded the Medal of
-            Distinction.
-            <br />
-            <br />
-            Most recently, at the Global Economics Olympiad 2022, I qualified
-            for the Regional Round with an ‘A’ grade representing the Gujarat
-            region. These experiences have been transformative, allowing me to
-            explore new fields, test my knowledge, and strive for excellence.
-          </p>
-          <div
-            class="row"
-            data-aos="zoom-in"
-            data-aos-mirror="true"
-            data-aos-once="false"
-          >
-            <div class="col-sm-6">
-              <div class="img-wrapper">
-                <img
-                  src="assets/imgs/content/co-curricular/olympiads/2. 2022- Global Economics Olympiad- Regional Level Qualified_page-0001.jpg"
-                  alt="2022- Global Economics Olympiad- Regional Level"
-                />
-                <div class="overlay">
-                  <div class="overlay-infos">
-                    <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="img-wrapper col-6">
-                  <img
-                    src="assets/imgs/content/co-curricular/olympiads/6. ASSET - 2019.jpg"
-                    alt="ASSET"
-                  />
-                  <div class="overlay">
-                    <div class="overlay-infos">
-                      <a href="javascript:void(0)"
-                        ><i class="ti-zoom-in"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="img-wrapper col-6">
-                  <img
-                    src="assets/imgs/content/co-curricular/olympiads/7. MUN-2019.jpg"
-                    alt="MUN"
-                  />
-                  <div class="overlay">
-                    <div class="overlay-infos">
-                      <a href="javascript:void(0)"
-                        ><i class="ti-zoom-in"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6">
-              <div class="img-wrapper">
-                <img
-                  src="assets/imgs/content/co-curricular/olympiads/4.  2021- English Olympiad - Distinction (Zonal Level)_page-0001.jpg"
-                  alt="021- English Olympiad - Distinction (Zonal Level)"
-                />
-                <div class="overlay">
-                  <div class="overlay-infos">
-                    <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Projects section -->
-    <!-- <section id="projects" class="section">
-      <div
-        class="container text-center"
-        data-aos="zoom-in"
-        data-aos-mirror="true"
-        data-aos-once="false"
-      >
-        <h6 class="section-title">Projects</h6>
-        <h6 class="subtitle mb-4">
-          Unveiling Insights Through My School Projects
-        </h6>
-        <div class="project row text-left">
-          <p class="col-sm-10">
-            1. Conducted a fundamental analysis of the company Kia Motors,
-            helped gain valuable insights into various strategic decision-making
-            processes.
-          </p>
-          <div class="col-sm-2 mb-3 mb-sm-0">
-            <a
-              class="btn btn-outline-primary w-sm"
-              href="pdfs/BM_FA_Kia_Motors.pdf"
-              target="_blank"
-              >View Report</a
-            >
-          </div>
-        </div>
-        <div class="project row text-left">
-          <p class="col-sm-10">
-            2. Exploring the methods of sampling enhanced my understanding of
-            data collection techniques and their application in research.
-          </p>
-          <div class="col-sm-2 mb-3 mb-sm-0">
-            <a
-              class="btn btn-outline-primary w-sm"
-              href="pdfs/BM_methods_of_sampling.pdf"
-              target="_blank"
-              >View Report</a
-            >
-          </div>
-        </div>
-        <div class="project row text-left">
-          <p class="col-sm-10">
-            3. Unraveling the intricacies of Von Koch snowflake exposed me to
-            the fascinating world of fractals and their relevance in
-            mathematics.
-          </p>
-          <div class="col-sm-2 mb-3 mb-sm-0">
-            <a
-              class="btn btn-outline-primary w-sm"
-              href="pdfs/Maths_FA_1_VON_KOCH_SNOWFLAKE.pdf"
-              target="_blank"
-              >View Report</a
-            >
-          </div>
-        </div>
-        <div class="project row text-left">
-          <p class="col-sm-10">
-            4. Market research on Rivulet Digital taught me the significance of
-            consumer preferences and market dynamics in shaping business
-            strategies.
-          </p>
-          <div class="col-sm-2 mb-3 mb-sm-0">
-            <a
-              class="btn btn-outline-primary w-sm"
-              href="pdfs/RESEARCH.pdf"
-              target="_blank"
-              >View Report</a
-            >
-          </div>
-        </div>
-        <div class="project row text-left">
-          <p class="col-sm-10">
-            5. Constructing an atomic theory timeline highlighted the evolution
-            of scientific knowledge over time.
-          </p>
-          <div class="col-sm-2 mb-3 mb-sm-0">
-            <a
-              class="btn btn-outline-primary w-sm"
-              href="pdfs/Timeline_Unit_7_Physics.pdf"
-              target="_blank"
-              >View Report</a
-            >
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End of Projects section -->
-
     <div id="fullpage" onclick="removeImage()">
       <img src="" alt="" />
     </div>
@@ -1032,57 +432,55 @@
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
     <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-    <!-- Animate on Scroll -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!-- steller js -->
     <script src="assets/js/steller.js"></script>
 
     <script>
-      AOS.init({
-        // Global settings:
-        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
-        initClassName: "aos-init", // class applied after initialization
-        animatedClassName: "aos-animate", // class applied on animation
-        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        offset: 80, // offset (in px) from the original trigger point
-        delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 600, // values from 0 to 3000, with step 50ms
-        easing: "ease", // default easing for AOS animations
-        once: false, // whether animation should happen only once - while scrolling down
-        mirror: false, // whether elements should animate out while scrolling past them
-        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
-      });
-
       const imgs = document.querySelectorAll(".img-wrapper img");
-      const zoomIcons = document.querySelectorAll(".overlay-infos a");
+      const zoomIcons = document.querySelectorAll(".overlay-infos");
       const fullPage = document.querySelector("#fullpage");
       const fullPageImg = document.querySelector("#fullpage img");
 
       zoomIcons.forEach((div) => {
         div.addEventListener("click", (e) => {
-          window.scrollTo(0, 0);
-          document.body.style.height = "100vh";
-          document.body.style.overflow = "hidden";
-          const src =
-            e.target.parentElement.parentElement.parentElement.previousSibling
-              .previousSibling.src;
+          // window.scrollTo(0, 0);
+          // document.body.style.height = "100vh";
+          // document.body.style.overflow = "hidden";
+
+          let imgElement;
+
+          if (e.target.tagName == "A") {
+            imgElement =
+              e.target.parentElement.parentElement.previousSibling
+                .previousSibling;
+          } else {
+            imgElement =
+              e.target.parentElement.parentElement.parentElement.previousSibling
+                .previousSibling;
+          }
+
+          const src = imgElement.src;
+
+          scrollTop = window.pageYOffset || document.documentElement.scrollTop;
           fullPageImg.src = src;
+          fullPage.style.top = scrollTop + "px";
           fullPage.style.display = "flex";
+
+          // if any scroll is attempted,
+          // set this to the previous value
+          window.onscroll = function () {
+            window.scrollTo(0, scrollTop);
+          };
         });
       });
 
       const removeImage = () => {
+        window.onscroll = function () {};
         fullPage.style.display = "none";
         fullPageImg.src = "";
-        document.body.style.height = "100%";
-        document.body.style.overflow = "scroll";
+        // document.body.style.height = "100%";
+        // document.body.style.overflow = "scroll";
       };
     </script>
   </body>
