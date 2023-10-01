@@ -64,8 +64,12 @@ h6.intro-title {
   color: var(--primary);
 }
 
+.intro-text {
+  font-size: 18px;
+}
+
 .home-img {
-  max-width: 200px;
+  max-width: 160px;
   aspect-ratio: 1;
   border-radius: 100px;
   object-fit: contain;
@@ -83,6 +87,7 @@ h6.intro-title {
     rgba(248, 249, 250, 0) 99%
   );
   width: 100%;
+  padding-top: 100px;
 }
 
 .carousel-caption h5 {
@@ -196,7 +201,7 @@ section#carousel .carousel .carousel-indicators {
 
 .carousel.ylac,
 .carousel.home {
-  height: 600px;
+  height: 350px;
 }
 
 .carousel-image {
@@ -293,6 +298,10 @@ iframe {
 }
 
 @media only screen and (max-width: 768px) {
+  .intro-text {
+    font-size: 15px;
+  }
+
   .card {
     padding: 0;
   }
