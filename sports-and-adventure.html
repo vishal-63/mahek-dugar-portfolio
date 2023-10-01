@@ -336,28 +336,43 @@
 
     <script>
       const imgs = document.querySelectorAll(".img-wrapper img");
-      const zoomIcons = document.querySelectorAll(".overlay-infos a");
+      const zoomIcons = document.querySelectorAll(".overlay-infos");
       const fullPage = document.querySelector("#fullpage");
       const fullPageImg = document.querySelector("#fullpage img");
 
       zoomIcons.forEach((div) => {
         div.addEventListener("click", (e) => {
-          window.scrollTo(0, 0);
-          document.body.style.height = "100vh";
-          document.body.style.overflow = "hidden";
-          const src =
-            e.target.parentElement.parentElement.parentElement.previousSibling
-              .previousSibling.src;
+          let imgElement;
+
+          if (e.target.tagName == "A") {
+            imgElement =
+              e.target.parentElement.parentElement.previousSibling
+                .previousSibling;
+          } else {
+            imgElement =
+              e.target.parentElement.parentElement.parentElement.previousSibling
+                .previousSibling;
+          }
+
+          const src = imgElement.src;
+
+          scrollTop = window.pageYOffset || document.documentElement.scrollTop;
           fullPageImg.src = src;
+          fullPage.style.top = scrollTop + "px";
           fullPage.style.display = "flex";
+
+          // if any scroll is attempted,
+          // set this to the previous value
+          window.onscroll = function () {
+            window.scrollTo(0, scrollTop);
+          };
         });
       });
 
       const removeImage = () => {
+        window.onscroll = function () {};
         fullPage.style.display = "none";
         fullPageImg.src = "";
-        document.body.style.height = "100%";
-        document.body.style.overflow = "scroll";
       };
     </script>
   </body>
